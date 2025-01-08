@@ -1,18 +1,18 @@
 
 export default async function Home() {
 
-    const response = await fetch("https://api.clashofclans.com/v1/clans/%23G0UUYP82", {
-      method: "GET",
-      headers: {
-        'Authorization': `Bearer ${process.env.API_TOKEN}`,
-        'Content-Type': 'application/json'
-      }
-    })
-    if(!response.ok){
-      throw new Error();
+  const response = await fetch("https://api.clashofclans.com/v1/clans/%23G0UUYP82", {
+    method: "GET",
+    headers: {
+      'Authorization': `Bearer ${process.env.API_TOKEN}`,
+      'Content-Type': 'application/json'
     }
-    const data = await response.json();
-    console.log(data)
+  })
+  if(!response.ok){
+    throw new Error();
+  }
+  const data = await response.json();
+  console.log(data)
 
   return (
     <>
