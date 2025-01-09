@@ -1,22 +1,23 @@
+import SearchUser from "./components/SearchUser";
 
 export default async function Home() {
 
-  const response = await fetch("https://api.clashofclans.com/v1/players/%23C8ULRCPR", {
-    method: "GET",
-    headers: {
-      'Authorization': `Bearer ${process.env.API_KEY}`,
-      'Content-Type': 'application/json'
-    }
-  })
-  if(!response.ok){
-    throw new Error();
-  }
-  const data = await response.json();
-  console.log(data);
+  // const response = await fetch("https://api.clashofclans.com/v1/players/%23C8ULRCPR", {
+  //   method: "GET",
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //     'Authorization': `Bearer ${process.env.API_KEY}`
+  //   }
+  // })
+  // if(!response.ok){
+  //   throw new Error();
+  // }
+  // const data = await response.json();
+  // console.log(data);
 
   return (
     <>
-      <div className="flex w-full gap-8">
+      {/* <div className="flex w-full gap-8">
         <div>
           <div>name: {data.name}</div>
           <div>townHall: {data.townHallLevel}</div>
@@ -37,7 +38,8 @@ export default async function Home() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+      <SearchUser />
     </>
   );
 }
