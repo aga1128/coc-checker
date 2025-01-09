@@ -1,7 +1,7 @@
 
 export default async function Home() {
 
-  const response = await fetch("https://api.clashofclans.com/v1/clans/%23G0UUYP82", {
+  const response = await fetch("https://api.clashofclans.com/v1/players/%23C8ULRCPR", {
     method: "GET",
     headers: {
       'Authorization': `Bearer ${process.env.API_KEY}`,
@@ -12,15 +12,32 @@ export default async function Home() {
     throw new Error();
   }
   const data = await response.json();
-  console.log(data)
+  console.log(data);
 
   return (
     <>
-      {data.memberList.map((member: any) => (
-        <div key={member.tag}>
-          {member.name}
+      <div className="flex w-full gap-8">
+        <div>
+          <div>name: {data.name}</div>
+          <div>townHall: {data.townHallLevel}</div>
         </div>
-      ))}
+        <div>
+          <div className="text-xl">HeroEquipment</div>
+          {data.heroEquipment.map((data: any) => (
+            <div key={data.name}>
+              {data.name}:{data.level}
+            </div>
+          ))}
+        </div>
+        <div>
+          <div className="text-xl">troops</div>
+          {data.troops.filter((object: any) => object.village === "home").map((data: any) => (
+            <div key={data.name}>
+              {data.name}:{data.level}
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 }
