@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { BASE_URL } from '../constants/paths';
 
 type Player = {
-  name: string | null;
+  name: string;
   townHallLevel: string;
   heroEquipment: string[];
   troops: string[];
@@ -67,7 +67,7 @@ const SearchUser = () => {
         </div>
         <div>
           <div className="text-xl">troops</div>
-          {data?.troops.filter((object: any) => object.village === "home").map((data: any) => (
+          {data?.troops.filter((obj: any) => obj.village === "home").map((data: any) => (
             <div key={data.name}>
               {data.name}:{data.level}
             </div>
