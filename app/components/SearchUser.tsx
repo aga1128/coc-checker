@@ -1,29 +1,43 @@
 'use client'
 import React, { useState } from 'react';
+import { BASE_URL } from '../constants/paths';
+
+type Player = {
+  name: string | null;
+  townHallLevel: string;
+  heroEquipment: string[];
+  troops: string[];
+} | null
 
 const SearchUser = () => {
 
   const [tag, setTag] = useState<string>("");
+  const [data, setData] = useState<Player>(null);
 
   const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+    e.preventDefault();
+
     try {
-      const response = await fetch(`https://api.clashofclans.com/v1/players/%23${tag}`, {
+      const response = await fetch(`${BASE_URL}/api/user?playerId=${tag}`, {
         method: "GET",
-        headers : {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
+        cache: 'no-store',
+        headers: {
+          'Content-Type': 'application/json'
         }
       })
-      if(!response.ok){
-        throw new Error();
+
+      if(!response.ok) {
+        throw new Error()
       }
+
       const data = await response.json();
-      console.log(data);
-    }catch (error){
+
+      setData(data);
+    }catch(error){
       console.error(error);
     }
   }
+  console.log(data);
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -37,6 +51,29 @@ const SearchUser = () => {
           検索する
         </button>
       </form>
+
+      <div className="flex w-full gap-8">
+        <div>
+          <div>name: {data?.name}</div>
+          <div>townHall: {data?.townHallLevel}</div>
+        </div>
+        <div>
+          <div className="text-xl">HeroEquipment</div>
+          {data?.heroEquipment.map((data: any) => (
+            <div key={data.name}>
+              {data.name}:{data.level}
+            </div>
+          ))}
+        </div>
+        <div>
+          <div className="text-xl">troops</div>
+          {data?.troops.filter((object: any) => object.village === "home").map((data: any) => (
+            <div key={data.name}>
+              {data.name}:{data.level}
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   )
 }
