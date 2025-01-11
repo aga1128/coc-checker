@@ -6,7 +6,7 @@ import { BASE_URL } from '../constants/paths';
 const SearchUser = () => {
 
   const [tag, setTag] = useState<string>("");
-  const [data, setData] = useState<Player>();
+  const [data, setData] = useState<Player | null>(null);
 
   const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -45,29 +45,30 @@ const SearchUser = () => {
           検索する
         </button>
       </form>
-
-      <div className="flex w-full gap-8">
-        <div>
-          <div>name: {data?.name}</div>
-          <div>townHall: {data?.townHallLevel}</div>
+      {data && (
+        <div className="flex w-full gap-8">
+          <div>
+            <div>name: {data.name}</div>
+            <div>townHall: {data?.townHallLevel}</div>
+          </div>
+          <div>
+            <div className="text-xl">HeroEquipment</div>
+            {data.heroEquipment.map((data: HeroEquipment) => (
+              <div key={data.name}>
+                {data.name}:{data.level}
+              </div>
+            ))}
+          </div>
+          <div>
+            <div className="text-xl">troops</div>
+            {data.troops.filter((obj: Troop) => obj.village === "home").map((data: Troop) => (
+              <div key={data.name}>
+                {data.name}:{data.level}
+              </div>
+            ))}
+          </div>
         </div>
-        <div>
-          <div className="text-xl">HeroEquipment</div>
-          {data?.heroEquipment.map((data: HeroEquipment) => (
-            <div key={data.name}>
-              {data.name}:{data.level}
-            </div>
-          ))}
-        </div>
-        <div>
-          <div className="text-xl">troops</div>
-          {data?.troops.filter((obj: Troop) => obj.village === "home").map((data: Troop) => (
-            <div key={data.name}>
-              {data.name}:{data.level}
-            </div>
-          ))}
-        </div>
-      </div>
+      )}
     </>
   )
 }
