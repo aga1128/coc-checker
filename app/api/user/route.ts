@@ -1,5 +1,6 @@
 'use server'
 import { NextRequest, NextResponse } from 'next/server';
+import { Player } from '../../types/coc'
 
 export async function GET(req: NextRequest) {
 
@@ -21,7 +22,7 @@ export async function GET(req: NextRequest) {
     if(!response.ok){
       throw new Error();
     }
-    const data = await response.json();
+    const data: Player = await response.json();
 
     return NextResponse.json(data);
 
