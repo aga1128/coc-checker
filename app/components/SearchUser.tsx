@@ -1,18 +1,12 @@
 'use client'
 import React, { useState } from 'react';
+import { Player, Troop, HeroEquipment } from '../types/coc'
 import { BASE_URL } from '../constants/paths';
-
-type Player = {
-  name: string;
-  townHallLevel: string;
-  heroEquipment: string[];
-  troops: string[];
-} | null
 
 const SearchUser = () => {
 
   const [tag, setTag] = useState<string>("");
-  const [data, setData] = useState<Player>(null);
+  const [data, setData] = useState<Player>();
 
   const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -59,7 +53,7 @@ const SearchUser = () => {
         </div>
         <div>
           <div className="text-xl">HeroEquipment</div>
-          {data?.heroEquipment.map((data: any) => (
+          {data?.heroEquipment.map((data: HeroEquipment) => (
             <div key={data.name}>
               {data.name}:{data.level}
             </div>
@@ -67,7 +61,7 @@ const SearchUser = () => {
         </div>
         <div>
           <div className="text-xl">troops</div>
-          {data?.troops.filter((obj: any) => obj.village === "home").map((data: any) => (
+          {data?.troops.filter((obj: Troop) => obj.village === "home").map((data: Troop) => (
             <div key={data.name}>
               {data.name}:{data.level}
             </div>
