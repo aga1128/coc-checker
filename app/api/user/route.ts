@@ -10,7 +10,7 @@ export async function GET(req: NextRequest) {
     if(req.method !== "GET") {
       throw new Error("この操作は許可されていないHTTPメソッドです");
     }
-    const response = await fetch(`https://api.clashofclans.com/v1/players/%23${playerId}`, {
+    const response = await fetch(`https://cocproxy.royaleapi.dev/v1/players/%23${playerId}`, {
       method: "GET",
       cache: 'no-store',
       headers: {
