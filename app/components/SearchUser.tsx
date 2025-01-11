@@ -49,7 +49,7 @@ const SearchUser = () => {
         <div className="flex w-full gap-8">
           <div>
             <div>name: {data.name}</div>
-            <div>townHall: {data?.townHallLevel}</div>
+            <div>townHall: {data.townHallLevel}</div>
           </div>
           <div>
             <div className="text-xl">HeroEquipment</div>
