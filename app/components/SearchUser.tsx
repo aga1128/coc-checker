@@ -1,18 +1,21 @@
 'use client'
 import React, { useState } from 'react';
-import { Player, Troop, HeroEquipment } from '../types/coc'
+import { Player, Troop, HeroEquipment } from '../types/coc';
 import { BASE_URL } from '../constants/paths';
+
+//テスト用タグ：#C8ULRCPR
 
 const SearchUser = () => {
 
-  const [tag, setTag] = useState<string>("");
+  const [playerId, setPlayerId] = useState<string>("");
   const [data, setData] = useState<Player | null>(null);
+
 
   const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${BASE_URL}/api/user?playerId=${tag}`, {
+      const response = await fetch(`${BASE_URL}/api/players/${encodeURIComponent(playerId)}`, {
         method: "GET",
         cache: 'no-store',
         headers: {
@@ -31,15 +34,15 @@ const SearchUser = () => {
       console.error(error);
     }
   }
-  console.log(data);
+
   return (
     <>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="********"
-          value={tag}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTag(e.target.value)}
+          placeholder="#********"
+          value={playerId}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPlayerId(e.target.value)}
         />
         <button type="submit">
           検索する

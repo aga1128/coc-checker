@@ -1,17 +1,17 @@
 'use server'
 import { NextRequest, NextResponse } from 'next/server';
-import { Player } from '../../types/coc'
+import { Player } from '../../../types/coc';
 
-export async function GET(req: NextRequest) {
+export async function GET(req: NextRequest, { params } : { params: Promise<{ playerId: string }>}) {
 
-  const { searchParams } = new URL(req.url);
-  const playerId = searchParams.get('playerId');
+  const { playerId } = await params;
+  const encodePlayerId = encodeURIComponent(playerId);
 
   try {
     if(req.method !== "GET") {
       throw new Error("この操作は許可されていないHTTPメソッドです");
     }
-    const response = await fetch(`https://cocproxy.royaleapi.dev/v1/players/%23${playerId}`, {
+    const response = await fetch(`https://cocproxy.royaleapi.dev/v1/players/${encodePlayerId}`, {
       method: "GET",
       cache: 'no-store',
       headers: {
