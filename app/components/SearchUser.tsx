@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Player, Troop, HeroEquipment } from '../types/coc';
 import { BASE_URL } from '../constants/paths';
 
-//テスト用タグ：#C8ULRCPR
+//テスト用タグ：#C8ULRCPR #2OCU9LVQ9
 
 const SearchUser = () => {
 
