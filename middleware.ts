@@ -1,10 +1,13 @@
-import { NextRequest } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import NextAuth from "next-auth";
 import authConfig from "./auth.config";
 
 const { auth } = NextAuth(authConfig)
 export default auth(async function middleware(req: NextRequest) {
-  // Your custom middleware logic goes here
+  const session = await auth();
+  if(!session && !req.nextUrl.pathname.startsWith('/login')) {
+    return NextResponse.redirect(new URL("/login", req.url))
+  }
 })
 
 export const config = {
