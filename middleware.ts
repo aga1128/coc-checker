@@ -6,8 +6,10 @@ const { auth } = NextAuth(authConfig)
 export default auth(async function middleware(req: NextRequest) {
   const session = await auth();
   if(!session && !req.nextUrl.pathname.startsWith('/login')) {
-    return NextResponse.redirect(new URL("/login", req.url))
+    return NextResponse.redirect(new URL("/login", req.url));
   }
+
+  return NextResponse.next();
 })
 
 export const config = {
