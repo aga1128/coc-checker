@@ -11,5 +11,6 @@ export default {
   secret: process.env.AUTH_SECRET,
   session: {
     strategy: 'jwt'
-  }
+  },
+  trustHost: true
 } satisfies NextAuthConfig
