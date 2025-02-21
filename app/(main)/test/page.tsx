@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Task from '../../components/Task';
 
 type Task = {
   id: string;
@@ -10,9 +11,9 @@ const TaskList = () => {
 
   const [title, setTitle] = useState<string>("");
   const [tasks, setTasks] = useState<Task[]>([]);
-  const [isEdit, setEdit] = useState<boolean>(false);
 
-  const addTask = () => {
+  const handleAddTask = () => {
+    if(title === "") return
     const id = crypto.randomUUID();
     console.log(id);
     const newTasks = { id: id, title: title };
@@ -20,19 +21,16 @@ const TaskList = () => {
     setTitle("");
   }
 
-  const editTask = () => {
-    setEdit(true);
+  const handleUpdateTask = (id: string, title: string) => {
+    setTasks((prevTasks) => (
+      prevTasks.map((task) => (
+        task.id === id ? { ...task, title } : task
+      ))
+    ))
   }
 
-  const deleteTask = (id: string) => {
-    setTasks(tasks.filter((task) => task.id !== id));
-  }
-
-  const updateTask = (id: string) => {
-  }
-
-  const cancel = () => {
-    setEdit(false);
+  const handleDeleteTask = (id: string) => {
+    setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
   }
 
 
@@ -41,26 +39,13 @@ const TaskList = () => {
 
       <div className="flex">
         <input type="text" value={title} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTitle(e.target.value)} />
-        <button type="button" onClick={addTask}>タスクを追加</button>
+        <button type="button" onClick={handleAddTask}>タスクを追加</button>
       </div>
 
       <div>
         {tasks.map((task) => (
           <div key={task.id}>
-            {isEdit ? (
-              <div className="flex">
-                <input type="text" value={task.title} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTitle(e.target.value)} />
-                <button onClick={() => updateTask(task.id)}>更新</button>
-                <button onClick={cancel}>キャンセル</button>
-              </div>
-            ): (
-              <div className="flex">
-                <div>{task.title}</div>
-                <button onClick={editTask}>編集</button>
-                <button onClick={() => deleteTask(task.id)}>削除</button>
-              </div>
-            )}
-
+            <Task id={task.id} title={task.title} onUpdate={handleUpdateTask} onDelete={handleDeleteTask} />
           </div>
         ))}
       </div>
