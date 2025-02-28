@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'bg-color': '#F2F0E9',
+        'main-color': '#F2F0E9',
         'section-color': '#FDFBF5'
       },
     },

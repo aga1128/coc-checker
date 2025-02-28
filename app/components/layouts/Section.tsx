@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-const Section = () => {
+const Section = ({ children }: { children: Readonly<React.ReactNode> }) => {
   return (
-    <div>Section</div>
+    <div className="flex flex-col bg-section-color">
+      {children}
+    </div>
   )
 }
 
