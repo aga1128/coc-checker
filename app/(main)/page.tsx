@@ -1,10 +1,11 @@
 import { auth } from "@/auth";
+import Section from "../components/layouts/Section";
 import SearchUser from "../components/SearchUser";
 import SignOut from "../components/SignOut"
 import { redirect } from "next/navigation";
-import Image from 'next/image';
 
-export default async function DashBoard() {
+
+export default async function Main() {
 
   const session = await auth();
   if (!session?.user) {
@@ -15,18 +16,9 @@ export default async function DashBoard() {
 
   return (
     <>
-      <div className="flex items-center">
-        {session.user.image && (
-          <Image
-            src={session.user.image}
-            width={30}
-            height={30}
-            alt="サムネイル"
-          />
-        )}
-        {session.user.name}
-      </div>
-      <SearchUser />
+      <Section>
+        <SearchUser />
+      </Section>
       <SignOut />
     </>
   );
