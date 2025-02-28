@@ -11,12 +11,12 @@ const Navigation = () => {
     {
       href: "/",
       pathname: "/",
-      title: "ダッシュボード",
+      title: "進捗管理",
     },
     {
-      href: "/setting",
-      pathname: "/setting",
-      title: "設定",
+      href: "/calculate",
+      pathname: "/calculate",
+      title: "ダメージ計算",
     },
   ]
  
