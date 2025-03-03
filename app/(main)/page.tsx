@@ -1,8 +1,10 @@
 import { auth } from "@/auth";
 import Section from "../components/layouts/Section";
 import SearchUser from "../components/SearchUser";
-import SignOut from "../components/SignOut"
+import SignOut from "../components/SignOut";
+import VillageProgressList from "../components/VillageProgressList";
 import { redirect } from "next/navigation";
+
 
 
 export default async function Main() {
@@ -16,9 +18,16 @@ export default async function Main() {
 
   return (
     <>
-      <Section>
-        <SearchUser />
-      </Section>
+      <div className="mb-6">
+        <Section title="プレイヤータグから適用">
+          <SearchUser />
+        </Section>
+      </div>
+      <div>
+        <Section title="進捗状況管理">
+          <VillageProgressList />
+        </Section>
+      </div>
       <SignOut />
     </>
   );

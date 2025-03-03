@@ -1,0 +1,1 @@
+export const MAX_TOWNHALL_LEVEL = 17;

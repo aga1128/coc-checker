@@ -14,6 +14,8 @@ const SearchUser = () => {
   const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    if(playerId === "") return
+
     try {
       const response = await fetch(`${BASE_URL}/api/players/${encodeURIComponent(playerId)}`, {
         method: "GET",
