@@ -44,6 +44,7 @@ const VillageProgressForm = () => {
           ))}
         </select>
       </div>
+      {townHallLevel}
         <form action="">
           <div className="flex">
             <div className="w-1/2">

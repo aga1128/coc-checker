@@ -20,7 +20,7 @@ const BuildingList = ({ data }: Props) => {
     <>
       <div>Buildings</div>
       {data.map((data) => (
-        <ItemCard data={data}/>
+        <ItemCard key={data.name} data={data}/>
       ))}
 
 
