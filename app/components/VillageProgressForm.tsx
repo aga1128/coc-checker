@@ -33,6 +33,38 @@ const VillageProgressForm = () => {
     }
   ]
 
+  const testData2 = [
+    {
+      id: 1,
+      name: '大砲',
+      category: 'building',
+      details: {
+        1: {
+          maxBuilding: 2,
+          upgradeTime: 50,
+          maxLevel: 1,
+        }
+      }
+    },
+    {
+      id: 2,
+      name: 'アーチャータワー',
+      category: 'building',
+      details: {
+        2: {
+          maxBuilding: 1,
+          upgradeTime: 70,
+          maxLevel: 1,
+        },
+        3: {
+          maxBuilding: 1,
+          upgradeTime: 70,
+          maxLevel: 1,
+        }
+      }
+    }
+  ]
+
 
   return (
     <>
