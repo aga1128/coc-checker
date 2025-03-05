@@ -65,6 +65,31 @@ const VillageProgressForm = () => {
     }
   ]
 
+  const testData3 = [
+    {
+      townHallLevel: 1,
+      cannon: {
+        maxLevel: 2,
+        maxQuantity: 1,
+      },
+      archerTower: {
+        maxLevel: 1,
+        maxQuantity: 1,
+      }
+    },
+    {
+      townHallLevel: 2,
+      cannon: {
+        maxLevel: 3,
+        maxQuantity: 2
+      },
+      archerTower: {
+        maxLevel: 2,
+        maxQuantity: 3
+      }
+    }
+  ]
+
 
   return (
     <>
