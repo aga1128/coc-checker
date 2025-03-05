@@ -2,7 +2,7 @@ import { auth } from "@/auth";
 import Section from "../components/layouts/Section";
 import SearchUser from "../components/SearchUser";
 import SignOut from "../components/SignOut";
-import VillageProgressList from "../components/VillageProgressList";
+import VillageProgressForm from "../components/VillageProgressForm";
 import { redirect } from "next/navigation";
 
 
@@ -25,7 +25,7 @@ export default async function Main() {
       </div>
       <div>
         <Section title="進捗状況管理">
-          <VillageProgressList />
+          <VillageProgressForm />
         </Section>
       </div>
       <SignOut />

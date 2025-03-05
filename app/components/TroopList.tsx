@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Troops = () => {
+const TroopList = () => {
   return (
     <div>Troops</div>
   )
 }
 
-export default Troops
+export default TroopList
