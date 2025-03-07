@@ -2,14 +2,14 @@
 
 import { adminDB } from "@/app/firebase/server";
 
-export async function getBuilding(level: number) {
-  const buldingRef = adminDB.collection("buildings").doc("cannon");
-  const buldingSnap = await buldingRef.get();
-  if (!buldingSnap.exists) {
+export async function getMaxQuantity(level: number) {
+  const thRef = adminDB.collection("th_levels").doc(`${level}`);
+  const thSnap = await thRef.get();
+  if (!thSnap.exists) {
     throw new Error("Building not found");
   }
 
-  const data = buldingSnap.data();
+  const data = thSnap.data();
 
   return data;
 }

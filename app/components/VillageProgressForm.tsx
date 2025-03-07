@@ -3,11 +3,24 @@ import React, { useState } from 'react'
 import BuildingList from '../components/BuildingList';
 import TroopList from '../components/TroopList';
 import { MAX_TOWNHALL_LEVEL } from '../constants/coc';
+import { BASE_URL } from '../constants/paths';
 
 const VillageProgressForm = () => {
   const [townHallLevel, setTownHallLevel] = useState<number>(1);
   const townHallLevelRange = Array.from({ length: MAX_TOWNHALL_LEVEL }, (_, i) => i + 1);
 
+
+  const handleChangeTHLevel = async(e: React.ChangeEvent<HTMLSelectElement>) => {
+    setTownHallLevel(Number(e.target.value));
+    try {
+      const res = await fetch(`${BASE_URL}/api/`, {
+        method: "GET",
+
+      })
+    } catch(error) {
+      console.error(error);
+    }
+  }
   const testData = [
     {
       name: "Cannon",
@@ -90,12 +103,27 @@ const VillageProgressForm = () => {
     }
   ]
 
+  const testData4 = { 
+    1: {
+      cannon: {
+        maxLevel: 2,
+        maxQuantity: 1
+      },
+      archer_tower: {
+        maxLevel: 2,
+        maxQuantity: 1
+      }
+    },
+    2: { test: "test" },
+  }
+
+
 
   return (
     <>
       <div>
         <label htmlFor="townHallLevel">タウンホールレベル</label>
-        <select name="townHallLevel" id="townHallLevel" onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setTownHallLevel(Number(e.target.value))}>
+        <select name="townHallLevel" id="townHallLevel" onChange={handleChangeTHLevel}>
           {townHallLevelRange.map((num) => (
             <option key={num} value={num}>{num}</option>
           ))}
