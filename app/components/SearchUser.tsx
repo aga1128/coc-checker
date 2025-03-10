@@ -5,7 +5,11 @@ import { BASE_URL } from '../constants/paths';
 
 //テスト用タグ：#C8ULRCPR #2OCU9LVQ9
 
-const SearchUser = () => {
+type Props = {
+  setTroops: React.Dispatch<React.SetStateAction<Troop[] | null>>
+}
+
+const SearchUser = ( { setTroops }: Props) => {
 
   const [playerId, setPlayerId] = useState<string>("");
   const [data, setData] = useState<Player | null>(null);
@@ -29,9 +33,10 @@ const SearchUser = () => {
         throw new Error()
       }
 
-      const data = await response.json();
+      const data: Player = await response.json();
 
       setData(data);
+      setTroops(data.troops);
     }catch(error){
       console.error(error);
     }

@@ -4,8 +4,13 @@ import BuildingList from '../components/BuildingList';
 import TroopList from '../components/TroopList';
 import { MAX_TOWNHALL_LEVEL } from '../constants/coc';
 import { BASE_URL } from '../constants/paths';
+import { Troop } from '../types/coc';
 
-const VillageProgressForm = () => {
+type Props = {
+  troops: Troop[] | null;
+}
+
+const VillageProgressForm = ({ troops }: Props) => {
   const [townHallLevel, setTownHallLevel] = useState<number>(1);
   const townHallLevelRange = Array.from({ length: MAX_TOWNHALL_LEVEL }, (_, i) => i + 1);
 
@@ -136,7 +141,7 @@ const VillageProgressForm = () => {
               <BuildingList data={testData} />
             </div>
             <div className="w-1/2">
-              <TroopList />
+              <TroopList troops={troops}/>
             </div>
           </div>
         </form>
