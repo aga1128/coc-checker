@@ -55,30 +55,6 @@ const SearchUser = ( { setTroops }: Props) => {
           検索する
         </button>
       </form>
-      {data && (
-        <div className="flex w-full gap-8">
-          <div>
-            <div>name: {data.name}</div>
-            <div>townHall: {data.townHallLevel}</div>
-          </div>
-          <div>
-            <div className="text-xl">HeroEquipment</div>
-            {data.heroEquipment.map((data: HeroEquipment) => (
-              <div key={data.name}>
-                {data.name}:{data.level}
-              </div>
-            ))}
-          </div>
-          <div>
-            <div className="text-xl">troops</div>
-            {data.troops.filter((obj: Troop) => obj.village === "home").map((data: Troop) => (
-              <div key={data.name}>
-                {data.name}:{data.level}
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
     </>
   )
 }
