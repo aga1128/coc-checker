@@ -12,7 +12,6 @@ type Props = {
 const SearchUser = ( { setTroops }: Props) => {
 
   const [playerId, setPlayerId] = useState<string>("");
-  const [data, setData] = useState<Player | null>(null);
 
 
   const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
@@ -35,7 +34,6 @@ const SearchUser = ( { setTroops }: Props) => {
 
       const data: Player = await response.json();
 
-      setData(data);
       setTroops(data.troops);
     }catch(error){
       console.error(error);

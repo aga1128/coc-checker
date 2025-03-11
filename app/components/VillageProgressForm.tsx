@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import BuildingList from '../components/BuildingList';
 import TroopList from '../components/TroopList';
 import { MAX_TOWNHALL_LEVEL } from '../constants/coc';
-import { BASE_URL } from '../constants/paths';
+// import { BASE_URL } from '../constants/paths';
 import { Troop } from '../types/coc';
 
 type Props = {
