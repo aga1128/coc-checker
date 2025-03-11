@@ -9,9 +9,13 @@ export default function HeaderLayout({
 }>) {
   return (
     <>
-      <Header />
-      <div className="flex flex-col w-full p-6 bg-yellow-100 overflow-x-auto max-md:p-4">
-        {children}
+      <div className="flex flex-col w-full px-8 py-6">
+        <div className="mb-6">
+          <Header />
+        </div>
+        <div>
+          {children}
+        </div>
       </div>
     </>
   );

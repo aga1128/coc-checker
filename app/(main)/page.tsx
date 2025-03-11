@@ -1,32 +1,28 @@
 import { auth } from "@/auth";
-import SearchUser from "../components/SearchUser";
-import SignOut from "../components/SignOut"
+import Progress from "../components/Progress";
+import SignOut from "../components/SignOut";
 import { redirect } from "next/navigation";
-import Image from 'next/image';
+import { getMaxQuantity } from "../utils/firestore/functions";
 
-export default async function DashBoard() {
+
+
+
+export default async function Main() {
 
   const session = await auth();
   if (!session?.user) {
     redirect('/login');
   }
 
+  const getData = await getMaxQuantity(1);
+
   console.log(session.user)
 
   return (
     <>
-      <div className="flex items-center">
-        {session.user.image && (
-          <Image
-            src={session.user.image}
-            width={30}
-            height={30}
-            alt="サムネイル"
-          />
-        )}
-        {session.user.name}
-      </div>
-      <SearchUser />
+      <Progress />
+      {getData?.buildings.cannon.maxQuantity}
+      {getData?.buildings.cannon.upgrade_time.level2}
       <SignOut />
     </>
   );
