@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Section from '../components/layouts/Section'
 import SearchUser from '../components/SearchUser'
 import VillageProgressForm from '../components/VillageProgressForm'
-import { Player, Troop, HeroEquipment } from '../types/coc';
+import { Troop } from '../types/coc';
 
 const Progress = () => {
 

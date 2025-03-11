@@ -17,14 +17,14 @@ const VillageProgressForm = ({ troops }: Props) => {
 
   const handleChangeTHLevel = async(e: React.ChangeEvent<HTMLSelectElement>) => {
     setTownHallLevel(Number(e.target.value));
-    try {
-      const res = await fetch(`${BASE_URL}/api/`, {
-        method: "GET",
+    // try {
+    //   const res = await fetch(`${BASE_URL}/api/`, {
+    //     method: "GET",
 
-      })
-    } catch(error) {
-      console.error(error);
-    }
+    //   })
+    // } catch(error) {
+    //   console.error(error);
+    // }
   }
   const testData = [
     {
@@ -51,76 +51,6 @@ const VillageProgressForm = ({ troops }: Props) => {
     }
   ]
 
-  const testData2 = [
-    {
-      id: 1,
-      name: '大砲',
-      category: 'building',
-      details: {
-        1: {
-          maxBuilding: 2,
-          upgradeTime: 50,
-          maxLevel: 1,
-        }
-      }
-    },
-    {
-      id: 2,
-      name: 'アーチャータワー',
-      category: 'building',
-      details: {
-        2: {
-          maxBuilding: 1,
-          upgradeTime: 70,
-          maxLevel: 1,
-        },
-        3: {
-          maxBuilding: 1,
-          upgradeTime: 70,
-          maxLevel: 1,
-        }
-      }
-    }
-  ]
-
-  const testData3 = [
-    {
-      townHallLevel: 1,
-      cannon: {
-        maxLevel: 2,
-        maxQuantity: 1,
-      },
-      archerTower: {
-        maxLevel: 1,
-        maxQuantity: 1,
-      }
-    },
-    {
-      townHallLevel: 2,
-      cannon: {
-        maxLevel: 3,
-        maxQuantity: 2
-      },
-      archerTower: {
-        maxLevel: 2,
-        maxQuantity: 3
-      }
-    }
-  ]
-
-  const testData4 = { 
-    1: {
-      cannon: {
-        maxLevel: 2,
-        maxQuantity: 1
-      },
-      archer_tower: {
-        maxLevel: 2,
-        maxQuantity: 1
-      }
-    },
-    2: { test: "test" },
-  }
 
 
 
