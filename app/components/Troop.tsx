@@ -8,7 +8,7 @@ type Props = {
 const TroopComponent = ({ troop }: Props) => {
   return (
     <>
-      {troop.name}:{troop.level}
+      {troop.name}:{troop.level}:{troop.maxLevel}
     </>
   )
 }

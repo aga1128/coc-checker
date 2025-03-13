@@ -144,3 +144,10 @@ export type Player = {
   heroEquipment: HeroEquipment[];
   spells: Spell[];
 }
+
+export type Building = {
+  name: string;
+  level: number;
+  maxLevel: number;
+  superTroopIsActive?: boolean;
+}
