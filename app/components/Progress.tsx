@@ -4,27 +4,39 @@ import Section from '../components/layouts/Section'
 import SearchUser from '../components/SearchUser'
 import VillageProgressForm from '../components/VillageProgressForm'
 import { Troop } from '../types/coc';
-import maxBuilding from '../data/coc_maxbuildings_data.json';
+import COC_DATA from '../data/coc_data.json';
 
-type MaxBuildingLevel = {
-  defenses: { [key: string]: number };
-  armies: { [key: string]: number };
-  resources: { [key: string]: number };
+
+type BuildingData = {
+  max_count: number;
+  max_level: number;
 };
 
-type MaxBuilding = {
-  max_buildings: {
-    [key: string]: MaxBuildingLevel;
-  };
+// 各防衛施設、罠、軍事施設、資源施設、ヒーローの型
+type DefenseType = Record<string, BuildingData>;
+type TrapType = Record<string, BuildingData>;
+type ArmyType = Record<string, BuildingData>;
+type ResourceType = Record<string, BuildingData>;
+type HeroType = Record<string, { max_level: number }>;
+
+// 各タウンホールレベルの型
+type TownHallData = {
+  defenses: DefenseType;
+  traps?: TrapType;
+  armies: ArmyType;
+  resources: ResourceType;
+  heroes?: HeroType;
 };
+
+type COCData = Record<string, TownHallData>;
 
 const Progress = () => {
 
   const [troops, setTroops] = useState<Troop[] | null>(null);
   const [townHallLevel, setTownHallLevel] = useState<number>(1);
 
-  const data: MaxBuilding = maxBuilding;
-  console.log(data.max_buildings[`TH${townHallLevel}`]);
+  const coc: COCData = COC_DATA;
+  console.log(coc[`TH${townHallLevel}`]);
   const handleSetTHLevel = async(townHallLevel: number) => {
 
   }
