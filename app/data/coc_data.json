@@ -1,0 +1,2008 @@
+{
+  "TH1": {
+    "defenses": {
+      "cannon": {
+        "max_count": 1,
+        "max_level": 2
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH2": {
+    "defenses": {
+      "cannon": {
+        "max_count": 2,
+        "max_level": 3
+      },
+      "archer_tower": {
+        "max_count": 1,
+        "max_level": 2
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH3": {
+    "defenses": {
+      "cannon": {
+        "max_count": 2,
+        "max_level": 4
+      },
+      "archer_tower": {
+        "max_count": 1,
+        "max_level": 3
+      },
+      "mortar": {
+        "max_count": 1,
+        "max_level": 1
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 2,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH4": {
+    "defenses": {
+      "cannon": {
+        "max_count": 2,
+        "max_level": 5
+      },
+      "archer_tower": {
+        "max_count": 2,
+        "max_level": 4
+      },
+      "mortar": {
+        "max_count": 1,
+        "max_level": 2
+      },
+      "air_defense": {
+        "max_count": 1,
+        "max_level": 2
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 2,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH5": {
+    "defenses": {
+      "cannon": {
+        "max_count": 3,
+        "max_level": 6
+      },
+      "archer_tower": {
+        "max_count": 3,
+        "max_level": 6
+      },
+      "mortar": {
+        "max_count": 1,
+        "max_level": 3
+      },
+      "air_defense": {
+        "max_count": 1,
+        "max_level": 3
+      },
+      "wizard_tower": {
+        "max_count": 1,
+        "max_level": 2
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 2,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH6": {
+    "defenses": {
+      "cannon": {
+        "max_count": 3,
+        "max_level": 7
+      },
+      "archer_tower": {
+        "max_count": 3,
+        "max_level": 7
+      },
+      "mortar": {
+        "max_count": 2,
+        "max_level": 4
+      },
+      "air_defense": {
+        "max_count": 2,
+        "max_level": 4
+      },
+      "wizard_tower": {
+        "max_count": 2,
+        "max_level": 3
+      },
+      "air_sweeper": {
+        "max_count": 1,
+        "max_level": 2
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "giant_bomb": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 2,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH7": {
+    "defenses": {
+      "cannon": {
+        "max_count": 5,
+        "max_level": 8
+      },
+      "archer_tower": {
+        "max_count": 4,
+        "max_level": 8
+      },
+      "mortar": {
+        "max_count": 3,
+        "max_level": 5
+      },
+      "air_defense": {
+        "max_count": 3,
+        "max_level": 5
+      },
+      "wizard_tower": {
+        "max_count": 2,
+        "max_level": 4
+      },
+      "air_sweeper": {
+        "max_count": 1,
+        "max_level": 3
+      },
+      "hidden_tesla": {
+        "max_count": 2,
+        "max_level": 3
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "giant_bomb": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "seeking_air_mine": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "hero_hall": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "dark_elixir_collector": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "dark_elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH8": {
+    "defenses": {
+      "cannon": {
+        "max_count": 5,
+        "max_level": 10
+      },
+      "archer_tower": {
+        "max_count": 5,
+        "max_level": 10
+      },
+      "mortar": {
+        "max_count": 4,
+        "max_level": 6
+      },
+      "air_defense": {
+        "max_count": 3,
+        "max_level": 6
+      },
+      "wizard_tower": {
+        "max_count": 3,
+        "max_level": 6
+      },
+      "air_sweeper": {
+        "max_count": 1,
+        "max_level": 4
+      },
+      "hidden_tesla": {
+        "max_count": 3,
+        "max_level": 6
+      },
+      "bomb_tower": {
+        "max_count": 1,
+        "max_level": 2
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "giant_bomb": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "seeking_air_mine": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "skeleton_trap": {
+        "max_count": 2,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "hero_hall": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "blacksmith": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "dark_elixir_collector": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "dark_elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH9": {
+    "defenses": {
+      "cannon": {
+        "max_count": 5,
+        "max_level": 11
+      },
+      "archer_tower": {
+        "max_count": 6,
+        "max_level": 11
+      },
+      "mortar": {
+        "max_count": 4,
+        "max_level": 7
+      },
+      "air_defense": {
+        "max_count": 4,
+        "max_level": 7
+      },
+      "wizard_tower": {
+        "max_count": 4,
+        "max_level": 7
+      },
+      "air_sweeper": {
+        "max_count": 2,
+        "max_level": 5
+      },
+      "hidden_tesla": {
+        "max_count": 4,
+        "max_level": 7
+      },
+      "bomb_tower": {
+        "max_count": 1,
+        "max_level": 3
+      },
+      "x_bow": {
+        "max_count": 2,
+        "max_level": 3
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "giant_bomb": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "seeking_air_mine": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "skeleton_trap": {
+        "max_count": 2,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "hero_hall": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "blacksmith": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "dark_elixir_collector": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "dark_elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH10": {
+    "defenses": {
+      "cannon": {
+        "max_count": 6,
+        "max_level": 13
+      },
+      "archer_tower": {
+        "max_count": 7,
+        "max_level": 13
+      },
+      "mortar": {
+        "max_count": 4,
+        "max_level": 8
+      },
+      "air_defense": {
+        "max_count": 4,
+        "max_level": 8
+      },
+      "wizard_tower": {
+        "max_count": 4,
+        "max_level": 9
+      },
+      "air_sweeper": {
+        "max_count": 2,
+        "max_level": 6
+      },
+      "hidden_tesla": {
+        "max_count": 4,
+        "max_level": 8
+      },
+      "bomb_tower": {
+        "max_count": 2,
+        "max_level": 4
+      },
+      "x_bow": {
+        "max_count": 3,
+        "max_level": 4
+      },
+      "inferno_tower": {
+        "max_count": 2,
+        "max_level": 3
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "giant_bomb": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "seeking_air_mine": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "skeleton_trap": {
+        "max_count": 3,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "hero_hall": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "blacksmith": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "dark_elixir_collector": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "dark_elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+"TH11": {
+    "defenses": {
+      "cannon": {
+        "max_count": 7,
+        "max_level": 15
+      },
+      "archer_tower": {
+        "max_count": 8,
+        "max_level": 15
+      },
+      "mortar": {
+        "max_count": 4,
+        "max_level": 10
+      },
+      "air_defense": {
+        "max_count": 4,
+        "max_level": 9
+      },
+      "wizard_tower": {
+        "max_count": 5,
+        "max_level": 10
+      },
+      "air_sweeper": {
+        "max_count": 2,
+        "max_level": 7
+      },
+      "hidden_tesla": {
+        "max_count": 4,
+        "max_level": 9
+      },
+      "bomb_tower": {
+        "max_count": 2,
+        "max_level": 6
+      },
+      "x_bow": {
+        "max_count": 4,
+        "max_level": 5
+      },
+      "inferno_tower": {
+        "max_count": 2,
+        "max_level": 5
+      },
+      "eagle_artillery": {
+        "max_count": 1,
+        "max_level": 2
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "giant_bomb": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "seeking_air_mine": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "skeleton_trap": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "tornado_trap": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "hero_hall": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "blacksmith": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "dark_elixir_collector": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "dark_elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH12": {
+    "defenses": {
+      "cannon": {
+        "max_count": 7,
+        "max_level": 17
+      },
+      "archer_tower": {
+        "max_count": 8,
+        "max_level": 17
+      },
+      "mortar": {
+        "max_count": 4,
+        "max_level": 12
+      },
+      "air_defense": {
+        "max_count": 4,
+        "max_level": 10
+      },
+      "wizard_tower": {
+        "max_count": 5,
+        "max_level": 11
+      },
+      "air_sweeper": {
+        "max_count": 2,
+        "max_level": 7
+      },
+      "hidden_tesla": {
+        "max_count": 5,
+        "max_level": 10
+      },
+      "bomb_tower": {
+        "max_count": 2,
+        "max_level": 7
+      },
+      "x_bow": {
+        "max_count": 4,
+        "max_level": 6
+      },
+      "inferno_tower": {
+        "max_count": 3,
+        "max_level": 6
+      },
+      "eagle_artillery": {
+        "max_count": 1,
+        "max_level": 3
+      },
+      "giga_tesla": {
+        "max_count": 1,
+        "max_level": 5
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 8,
+        "max_level": 0
+      },
+      "giant_bomb": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "seeking_air_mine": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "skeleton_trap": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "tornado_trap": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "hero_hall": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "blacksmith": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "workshop": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "dark_elixir_collector": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "dark_elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH13": {
+    "defenses": {
+      "cannon": {
+        "max_count": 7,
+        "max_level": 19
+      },
+      "archer_tower": {
+        "max_count": 8,
+        "max_level": 19
+      },
+      "mortar": {
+        "max_count": 4,
+        "max_level": 13
+      },
+      "air_defense": {
+        "max_count": 4,
+        "max_level": 11
+      },
+      "wizard_tower": {
+        "max_count": 5,
+        "max_level": 13
+      },
+      "air_sweeper": {
+        "max_count": 2,
+        "max_level": 7
+      },
+      "hidden_tesla": {
+        "max_count": 5,
+        "max_level": 12
+      },
+      "bomb_tower": {
+        "max_count": 2,
+        "max_level": 8
+      },
+      "x_bow": {
+        "max_count": 4,
+        "max_level": 8
+      },
+      "inferno_tower": {
+        "max_count": 3,
+        "max_level": 7
+      },
+      "eagle_artillery": {
+        "max_count": 1,
+        "max_level": 4
+      },
+      "giga_inferno": {
+        "max_count": 1,
+        "max_level": 5
+      },
+      "scattershot": {
+        "max_count": 2,
+        "max_level": 2
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 9,
+        "max_level": 0
+      },
+      "giant_bomb": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 6,
+        "max_level": 0
+      },
+      "seeking_air_mine": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "skeleton_trap": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "tornado_trap": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "hero_hall": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "blacksmith": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "workshop": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "dark_elixir_collector": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "dark_elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH14": {
+    "defenses": {
+      "cannon": {
+        "max_count": 7,
+        "max_level": 20
+      },
+      "archer_tower": {
+        "max_count": 8,
+        "max_level": 20
+      },
+      "mortar": {
+        "max_count": 4,
+        "max_level": 14
+      },
+      "air_defense": {
+        "max_count": 4,
+        "max_level": 12
+      },
+      "wizard_tower": {
+        "max_count": 5,
+        "max_level": 14
+      },
+      "air_sweeper": {
+        "max_count": 2,
+        "max_level": 7
+      },
+      "hidden_tesla": {
+        "max_count": 5,
+        "max_level": 13
+      },
+      "bomb_tower": {
+        "max_count": 2,
+        "max_level": 9
+      },
+      "x_bow": {
+        "max_count": 4,
+        "max_level": 9
+      },
+      "inferno_tower": {
+        "max_count": 3,
+        "max_level": 8
+      },
+      "eagle_artillery": {
+        "max_count": 1,
+        "max_level": 5
+      },
+      "giga_inferno": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "scattershot": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "builder_hut": {
+        "max_count": 5,
+        "max_level": 0
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 8,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 9,
+        "max_level": 0
+      },
+      "giant_bomb": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "seeking_air_mine": {
+        "max_count": 8,
+        "max_level": 0
+      },
+      "skeleton_trap": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "tornado_trap": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "hero_hall": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "blacksmith": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "workshop": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "pet_house": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "dark_elixir_collector": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "dark_elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH15": {
+    "defenses": {
+      "cannon": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "archer_tower": {
+        "max_count": 8,
+        "max_level": 0
+      },
+      "mortar": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "air_defense": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "wizard_tower": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "air_sweeper": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "hidden_tesla": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "bomb_tower": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "x_bow": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "inferno_tower": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "eagle_artillery": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "giga_inferno": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "scattershot": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "builder_hut": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "spell_tower": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "monolith": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 8,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 9,
+        "max_level": 0
+      },
+      "giant_bomb": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "seeking_air_mine": {
+        "max_count": 8,
+        "max_level": 0
+      },
+      "skeleton_trap": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "tornado_trap": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "hero_hall": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "blacksmith": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "workshop": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "pet_house": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "dark_elixir_collector": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "dark_elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH16": {
+    "defenses": {
+      "cannon": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "archer_tower": {
+        "max_count": 8,
+        "max_level": 0
+      },
+      "mortar": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "air_defense": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "wizard_tower": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "air_sweeper": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "hidden_tesla": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "bomb_tower": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "x_bow": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "inferno_tower": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "eagle_artillery": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "scattershot": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "builder_hut": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "spell_tower": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "monolith": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "ricochet_cannon": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "multi_archer_tower": {
+        "max_count": 2,
+        "max_level": 0
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 8,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 9,
+        "max_level": 0
+      },
+      "giant_bomb": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "seeking_air_mine": {
+        "max_count": 8,
+        "max_level": 0
+      },
+      "skeleton_trap": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "tornado_trap": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "hero_hall": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "blacksmith": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "workshop": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "pet_house": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "dark_elixir_collector": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "dark_elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  },
+  "TH17": {
+    "defenses": {
+      "cannon": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "archer_tower": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "mortar": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "air_defense": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "wizard_tower": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "air_sweeper": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "hidden_tesla": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "bomb_tower": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "x_bow": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "inferno_tower": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "inferno_artillery": {
+        "max_count": 1,
+        "max_level": 5
+      },
+      "scattershot": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "builder_hut": {
+        "max_count": 5,
+        "max_level": 0
+      },
+      "spell_tower": {
+        "max_count": 2,
+        "max_level": 0
+      },
+      "monolith": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "ricochet_cannon": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "multi_archer_tower": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "multi_gear_tower": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "firespitter": {
+        "max_count": 2,
+        "max_level": 0
+      }
+    },
+    "traps": {
+      "bomb": {
+        "max_count": 8,
+        "max_level": 0
+      },
+      "spring_trap": {
+        "max_count": 9,
+        "max_level": 0
+      },
+      "giant_bomb": {
+        "max_count": 8,
+        "max_level": 0
+      },
+      "air_bomb": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "seeking_air_mine": {
+        "max_count": 9,
+        "max_level": 0
+      },
+      "skeleton_trap": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "tornado_trap": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "giga_bomb": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "armies": {
+      "army_camp": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "laboratory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_barracks": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "hero_hall": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "dark_spell_factory": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "blacksmith": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "workshop": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "pet_house": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    },
+    "resources": {
+      "gold_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "elixir_collector": {
+        "max_count": 7,
+        "max_level": 0
+      },
+      "dark_elixir_collector": {
+        "max_count": 3,
+        "max_level": 0
+      },
+      "gold_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "elixir_storage": {
+        "max_count": 4,
+        "max_level": 0
+      },
+      "dark_elixir_storage": {
+        "max_count": 1,
+        "max_level": 0
+      },
+      "clan_castle": {
+        "max_count": 1,
+        "max_level": 0
+      }
+    }
+  }
+}
