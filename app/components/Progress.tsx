@@ -3,32 +3,8 @@ import React, { useState } from 'react'
 import Section from '../components/layouts/Section'
 import SearchUser from '../components/SearchUser'
 import VillageProgressForm from '../components/VillageProgressForm'
-import { Troop } from '../types/coc';
+import { Troop, COCData } from '../types/coc';
 import COC_DATA from '../data/coc_data.json';
-
-
-type BuildingData = {
-  max_count: number;
-  max_level: number;
-};
-
-// 各防衛施設、罠、軍事施設、資源施設、ヒーローの型
-type DefenseType = Record<string, BuildingData>;
-type TrapType = Record<string, BuildingData>;
-type ArmyType = Record<string, BuildingData>;
-type ResourceType = Record<string, BuildingData>;
-type HeroType = Record<string, { max_level: number }>;
-
-// 各タウンホールレベルの型
-type TownHallData = {
-  defenses: DefenseType;
-  traps?: TrapType;
-  armies: ArmyType;
-  resources: ResourceType;
-  heroes?: HeroType;
-};
-
-type COCData = Record<string, TownHallData>;
 
 const Progress = () => {
 
