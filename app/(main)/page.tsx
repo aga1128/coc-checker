@@ -15,7 +15,7 @@ export default async function Main() {
   }
 
   const getData = await getMaxQuantity(1);
-
+  console.log(getData)
   console.log(session.user)
 
   return (

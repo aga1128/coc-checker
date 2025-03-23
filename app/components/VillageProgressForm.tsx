@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import BuildingList from '../components/BuildingList';
 import TroopList from '../components/TroopList';
 import { MAX_TOWNHALL_LEVEL } from '../constants/coc';
@@ -8,20 +8,27 @@ import { Troop } from '../types/coc';
 
 type Props = {
   troops: Troop[] | null;
+  townHallLevel: number;
+  setTownHallLevel: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const VillageProgressForm = ({ troops }: Props) => {
-  const [townHallLevel, setTownHallLevel] = useState<number>(1);
+const VillageProgressForm = ({ troops, townHallLevel, setTownHallLevel }: Props) => {
+  // const [village, setVillage] = useState();
   const townHallLevelRange = Array.from({ length: MAX_TOWNHALL_LEVEL }, (_, i) => i + 1);
+
+  // useEffect(() => {
+  //   setTownHallLevel(props.townHallLevel)
+  // }, [props.townHallLevel])
 
 
   const handleChangeTHLevel = async(e: React.ChangeEvent<HTMLSelectElement>) => {
     setTownHallLevel(Number(e.target.value));
     // try {
-    //   const res = await fetch(`${BASE_URL}/api/`, {
-    //     method: "GET",
-
+    //   const res = await fetch(`${BASE_URL}/api/th/${townHallLevel}`, {
+    //     method: "GET"
     //   })
+
+      
     // } catch(error) {
     //   console.error(error);
     // }

@@ -7,9 +7,10 @@ import { BASE_URL } from '../constants/paths';
 
 type Props = {
   setTroops: React.Dispatch<React.SetStateAction<Troop[] | null>>
+  setTownHallLevel: React.Dispatch<React.SetStateAction<number>>
 }
 
-const SearchUser = ( { setTroops }: Props) => {
+const SearchUser = ( { setTroops, setTownHallLevel }: Props) => {
 
   const [playerId, setPlayerId] = useState<string>("");
 
@@ -35,6 +36,7 @@ const SearchUser = ( { setTroops }: Props) => {
       const data: Player = await response.json();
 
       setTroops(data.troops);
+      setTownHallLevel(data.townHallLevel);
     }catch(error){
       console.error(error);
     }
