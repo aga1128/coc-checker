@@ -13,9 +13,9 @@ const Progress = () => {
 
   const coc: COCData = COC_DATA;
   console.log(coc[`TH${townHallLevel}`]);
-  const handleSetTHLevel = async(townHallLevel: number) => {
+  // const handleSetTHLevel = async(townHallLevel: number) => {
 
-  }
+  // }
 
   return (
     <>

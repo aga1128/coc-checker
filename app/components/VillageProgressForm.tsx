@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import BuildingList from '../components/BuildingList';
 import TroopList from '../components/TroopList';
 import { MAX_TOWNHALL_LEVEL } from '../constants/coc';
