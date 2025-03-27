@@ -19,9 +19,9 @@ const ItemCard = ({ data }: Props) => {
         </div>
         {maxCount.map((count) => (
           <div key={count} className="flex items-center">
-            {maxLevel.map((item) => (
-              <button key={item} className="flex items-center justify-center w-8 h-8 p-2 border bg-red-300">
-                {item}
+            {maxLevel.map((level) => (
+              <button key={level} className="flex items-center justify-center w-8 h-8 p-2 border bg-red-300">
+                {level}
               </button>
             ))}
           </div>
