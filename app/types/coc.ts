@@ -152,20 +152,21 @@ export type Building = {
   superTroopIsActive?: boolean;
 }
 
-type BuildingData = {
-  max_count: number;
-  max_level: number;
+
+export type BuildingData = {
+  name: string;
+  maxCount: number;
+  maxLevel: number;
 };
 
-// 各防衛施設、罠、軍事施設、資源施設、ヒーローの型
-type DefenseType = Record<string, BuildingData>;
-type TrapType = Record<string, BuildingData>;
-type ArmyType = Record<string, BuildingData>;
-type ResourceType = Record<string, BuildingData>;
-type HeroType = Record<string, { max_level: number }>;
+type DefenseType = BuildingData[];
+type TrapType = BuildingData[];
+type ArmyType = BuildingData[];
+type ResourceType = BuildingData[];
+type HeroType = { name: string, maxLevel: number }[];
 
-// 各タウンホールレベルの型
-type TownHallData = {
+
+export type TownHallData = {
   defenses: DefenseType;
   traps?: TrapType;
   armies: ArmyType;
