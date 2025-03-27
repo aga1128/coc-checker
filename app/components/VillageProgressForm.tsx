@@ -3,8 +3,7 @@ import React from 'react'
 import BuildingList from '../components/BuildingList';
 import TroopList from '../components/TroopList';
 import { MAX_TOWNHALL_LEVEL } from '../constants/coc';
-// import { BASE_URL } from '../constants/paths';
-import { COCData, Troop } from '../types/coc';
+import { COCData, TownHallData, Troop } from '../types/coc';
 import COC_DATA from '../data/coc_data.json';
 
 type Props = {
@@ -14,32 +13,15 @@ type Props = {
 }
 
 const VillageProgressForm = ({ troops, townHallLevel, setTownHallLevel }: Props) => {
-  // const [village, setVillage] = useState();
+
+  const cocData: COCData = COC_DATA;
+  const thData: TownHallData = cocData[`TH${townHallLevel}`];
+
   const townHallLevelRange = Array.from({ length: MAX_TOWNHALL_LEVEL }, (_, i) => i + 1);
-
-  // useEffect(() => {
-  //   setTownHallLevel(props.townHallLevel)
-  // }, [props.townHallLevel])
-
 
   const handleChangeTHLevel = async(e: React.ChangeEvent<HTMLSelectElement>) => {
     setTownHallLevel(Number(e.target.value));
-    // try {
-    //   const res = await fetch(`${BASE_URL}/api/th/${townHallLevel}`, {
-    //     method: "GET"
-    //   })
-
-      
-    // } catch(error) {
-    //   console.error(error);
-    // }
   }
-
-  
-  const cocData: COCData = COC_DATA;
-  console.log(cocData[`TH${townHallLevel}`]);
-
-
 
   return (
     <>
@@ -55,7 +37,7 @@ const VillageProgressForm = ({ troops, townHallLevel, setTownHallLevel }: Props)
         <form action="">
           <div className="flex">
             <div className="w-1/2">
-              <BuildingList data={cocData} />
+              <BuildingList data={thData} />
             </div>
             <div className="w-1/2">
               <TroopList troops={troops}/>

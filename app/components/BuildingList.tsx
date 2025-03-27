@@ -1,9 +1,9 @@
 import React from 'react'
 import ItemCard from '../components/ItemCard';
-import { COCData } from '../types/coc';
+import { TownHallData } from '../types/coc';
 
 type Props = {
-  data: COCData;
+  data: TownHallData;
 }
 
 const BuildingList = ({ data }: Props) => {
@@ -11,12 +11,15 @@ const BuildingList = ({ data }: Props) => {
     <>
       <div>Buildings</div>
 
-      {data.defenses.map((defense) => (
-
+      {data.defenses.map((data) => (
+        // <div key={data.name}>
+        //   name:{data.name}maxCount:{data.maxCount}maxLevel:{data.maxLevel}
+        // </div>
+        <ItemCard key={data.name} data={data}/>
       ))}
-      {data.map((data) => (
+      {/* {data.map((data) => (
         <ItemCard key={data.name} data={data} />
-      ))}
+      ))} */}
 
 
     </>
