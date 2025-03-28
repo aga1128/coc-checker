@@ -21,8 +21,6 @@ export default async function Main() {
   return (
     <>
       <Progress />
-      {getData?.buildings.cannon.maxQuantity}
-      {getData?.buildings.cannon.upgrade_time.level2}
       <SignOut />
     </>
   );

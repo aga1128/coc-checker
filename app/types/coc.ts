@@ -153,25 +153,23 @@ export type Building = {
 }
 
 
-export type BuildingData = {
+export type CategoryData = {
   name: string;
   maxCount: number;
   maxLevel: number;
 };
 
-type DefenseType = BuildingData[];
-type TrapType = BuildingData[];
-type ArmyType = BuildingData[];
-type ResourceType = BuildingData[];
-type HeroType = { name: string, maxLevel: number }[];
+export type HeroData = {
+  name: string;
+  maxLevel: number;
+}
 
-
-export type TownHallData = {
-  defenses: DefenseType;
-  traps?: TrapType;
-  armies: ArmyType;
-  resources: ResourceType;
-  heroes?: HeroType;
+export type BuildingData = {
+  defenses: CategoryData[];
+  traps?: CategoryData[];
+  armies: CategoryData[];
+  resources: CategoryData[];
+  heroes?: HeroData[];
 };
 
-export type COCData = Record<string, TownHallData>;
+export type COCData = Record<string, BuildingData>;

@@ -1,8 +1,8 @@
 import React from 'react'
-import { BuildingData } from '../types/coc'
+import { CategoryData } from '../types/coc'
 
 type Props = {
-  data: BuildingData;
+  data: CategoryData;
 }
 
 const ItemCard = ({ data }: Props) => {
@@ -26,7 +26,6 @@ const ItemCard = ({ data }: Props) => {
             ))}
           </div>
         ))}
-
       </div>
     </>
   )

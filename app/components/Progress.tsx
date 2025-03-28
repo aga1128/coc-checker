@@ -1,8 +1,8 @@
 'use client'
-import React, { useState } from 'react'
-import Section from '../components/layouts/Section'
-import SearchUser from '../components/SearchUser'
-import VillageProgressForm from '../components/VillageProgressForm'
+import React, { useState } from 'react';
+import Section from '../components/layouts/Section';
+import SearchUser from '../components/SearchUser';
+import VillageProgressForm from '../components/VillageProgressForm';
 import { Troop } from '../types/coc';
 
 const Progress = () => {
