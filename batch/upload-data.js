@@ -1,9 +1,26 @@
-import { adminDB } from "@/app/firebase/server";
-import { TH_DATA } from "./constants/coc";
-import { THData } from "./types/coc";
+import dotenv from "dotenv";
+dotenv.config({ path: "../.env.local" });
+
+import admin from "firebase-admin";
+import { initializeApp, getApps, getApp } from 'firebase-admin/app';
+import { getFirestore } from 'firebase-admin/firestore';
+import { TH_DATA } from "./coc_base.js";
+
+
+
+const app = getApps().length === 0 ? initializeApp({
+  credential: admin.credential.cert({
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+    privateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+  }),
+}) : getApp();
+
+
+export const adminDB = getFirestore(app);
 
 const COLLECTION_NAME = "th_levels";
-const data: THData = TH_DATA;
+const data = TH_DATA;
 
 
 async function uploadDataInBatch() {
@@ -17,9 +34,9 @@ async function uploadDataInBatch() {
     const chunk = data.slice(i, i + MAX_BATCH_SIZE);
     
     chunk.forEach((item) => {
-      const docRef = adminDB.collection(COLLECTION_NAME).doc(item.THLevel);
-      // THレベルを除外してドキュメントデータを作成
       const { THLevel, ...data } = item;
+      const docRef = adminDB.collection(COLLECTION_NAME).doc(THLevel);
+      // THレベルを除外してドキュメントデータを作成
       batch.set(docRef, data);
     });
     

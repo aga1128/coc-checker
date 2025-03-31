@@ -1,4 +1,4 @@
-import { adminDB } from "@/app/firebase/server";
+// import { adminDB } from "@/app/firebase/server";
 
 // export async function getMaxQuantity(level: number) {
 //   const thRef = adminDB.collection("th_levels").doc(`${level}`);
