@@ -14,8 +14,6 @@ const ItemCard = ({ data }: Props) => {
       <div>
         <div className="flex flex-col">
           <div>name:{data.name}</div>
-          <div>maxCount:{data.maxCount}</div>
-          <div>maxLevel:{data.maxLevel}</div>
         </div>
         {maxCount.map((count) => (
           <div key={count} className="flex items-center">

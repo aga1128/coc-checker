@@ -170,6 +170,16 @@ export type BuildingData = {
   armies: CategoryData[];
   resources: CategoryData[];
   heroes?: HeroData[];
-};
+}
 
 export type COCData = Record<string, BuildingData>;
+
+export type BuildingsData = {
+  THLevel: string;
+  defenses: CategoryData[];
+  traps?: CategoryData[];
+  armies: CategoryData[];
+  resources: CategoryData[];
+  heroes?: HeroData[];
+}
+export type THData = BuildingsData[];
