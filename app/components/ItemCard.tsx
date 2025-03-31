@@ -1,8 +1,8 @@
 import React from 'react'
-import { BuildingData } from '../types/coc'
+import { CategoryData } from '../types/coc'
 
 type Props = {
-  data: BuildingData;
+  data: CategoryData;
 }
 
 const ItemCard = ({ data }: Props) => {
@@ -14,19 +14,16 @@ const ItemCard = ({ data }: Props) => {
       <div>
         <div className="flex flex-col">
           <div>name:{data.name}</div>
-          <div>maxCount:{data.maxCount}</div>
-          <div>maxLevel:{data.maxLevel}</div>
         </div>
         {maxCount.map((count) => (
           <div key={count} className="flex items-center">
-            {maxLevel.map((item) => (
-              <button key={item} className="flex items-center justify-center w-8 h-8 p-2 border bg-red-300">
-                {item}
+            {maxLevel.map((level) => (
+              <button key={level} className="flex items-center justify-center w-8 h-8 p-2 border bg-red-300">
+                {level}
               </button>
             ))}
           </div>
         ))}
-
       </div>
     </>
   )
