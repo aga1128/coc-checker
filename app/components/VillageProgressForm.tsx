@@ -2,28 +2,25 @@
 import React from 'react';
 import BuildingList from '../components/BuildingList';
 import TroopList from '../components/TroopList';
-import { COCData, BuildingData, Troop } from '../types/coc';
-import COC_DATA from '../data/coc_data.json';
-import SelectTHLevel from '../components/SelectTHLevel';
+import { THData, Troop } from '../types/coc';
 
 type Props = {
-  troops: Troop[] | null;
   townHallLevel: number;
-  setTownHallLevel: React.Dispatch<React.SetStateAction<number>>;
+  troops: Troop[] | null;
+  THData: THData | null;
 }
 
-const VillageProgressForm = ({ troops, townHallLevel, setTownHallLevel }: Props) => {
-
-  const cocData: COCData = COC_DATA;
-  const thData: BuildingData = cocData[`TH${townHallLevel}`];
+const VillageProgressForm = ({ townHallLevel, troops, THData }: Props) => {
+  console.log("data",THData);
+  console.log("level",townHallLevel)
+  if(THData === null) return
 
   return (
     <>
-      <SelectTHLevel townHallLevel={townHallLevel} setTownHallLevel={setTownHallLevel} />
       <form action="">
         <div className="flex">
           <div className="w-1/2">
-            <BuildingList buildingData={thData} />
+            <BuildingList buildingData={THData} />
           </div>
           <div className="w-1/2">
             <TroopList troops={troops}/>

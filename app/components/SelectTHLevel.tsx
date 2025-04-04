@@ -3,13 +3,13 @@ import { MAX_TOWNHALL_LEVEL } from '../constants/coc';
 
 type Props = {
   townHallLevel: number,
-  setTownHallLevel: React.Dispatch<React.SetStateAction<number>>;
+  handleSetTownHallLevel: (level: number) => Promise<void>;
 }
-const SelectTHLevel = ({ townHallLevel, setTownHallLevel }: Props) => {
+const SelectTHLevel = ({ townHallLevel, handleSetTownHallLevel }: Props) => {
   const townHallLevelRange: number[] = Array.from({ length: MAX_TOWNHALL_LEVEL }, (_, i) => i + 1);
   
   const handleChangeTHLevel = async(e: React.ChangeEvent<HTMLSelectElement>) => {
-    setTownHallLevel(Number(e.target.value));
+    handleSetTownHallLevel(Number(e.target.value));
   }
 
   return (

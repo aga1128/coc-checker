@@ -1,10 +1,10 @@
 import React from 'react';
 import CategoryList from '../components/CategoryList';
 import HeroList from '../components/HeroList';
-import { BuildingData } from '../types/coc';
+import { THData } from '../types/coc';
 
 type Props = {
-  buildingData: BuildingData;
+  buildingData: THData;
 }
 
 const BuildingList = ({ buildingData }: Props) => {

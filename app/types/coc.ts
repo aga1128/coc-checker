@@ -152,7 +152,6 @@ export type Building = {
   superTroopIsActive?: boolean;
 }
 
-
 export type CategoryData = {
   name: string;
   maxCount: number;
@@ -164,17 +163,7 @@ export type HeroData = {
   maxLevel: number;
 }
 
-export type BuildingData = {
-  defenses: CategoryData[];
-  traps?: CategoryData[];
-  armies: CategoryData[];
-  resources: CategoryData[];
-  heroes?: HeroData[];
-}
-
-export type COCData = Record<string, BuildingData>;
-
-export type BuildingsData = {
+export type THData = {
   THLevel: string;
   defenses: CategoryData[];
   traps?: CategoryData[];
@@ -182,4 +171,3 @@ export type BuildingsData = {
   resources: CategoryData[];
   heroes?: HeroData[];
 }
-export type THData = BuildingsData[];
