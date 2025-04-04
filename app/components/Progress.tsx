@@ -2,24 +2,47 @@
 import React, { useState } from 'react';
 import Section from '../components/layouts/Section';
 import SearchUser from '../components/SearchUser';
+import SelectTHLevel from '../components/SelectTHLevel';
 import VillageProgressForm from '../components/VillageProgressForm';
-import { Troop } from '../types/coc';
+import { THData, Troop } from '../types/coc';
+import { BASE_URL } from '../constants/paths';
+
 
 const Progress = () => {
 
-  const [troops, setTroops] = useState<Troop[] | null>(null);
   const [townHallLevel, setTownHallLevel] = useState<number>(1);
+  const [troops, setTroops] = useState<Troop[] | null>(null);
+  const [THData, setTHData] = useState<THData | null>(null);
+
+  console.log(townHallLevel)
+  const handleSetTownHallLevel = async(level: number) => {
+    setTownHallLevel(level);
+    try {
+      const response = await fetch(`${BASE_URL}/api/th-levels/${level}`, {
+        method: "GET"
+      })
+
+      if(!response.ok) {
+        throw new Error()
+      }
+      const data: THData = await response.json();
+      setTHData(data);
+    }catch(error){
+      console.error(error);
+    }
+  }
 
   return (
     <>
       <div className="mb-6">
         <Section title="プレイヤータグから適用">
-          <SearchUser setTroops={setTroops} setTownHallLevel={setTownHallLevel} />
+          <SearchUser setTroops={setTroops} handleSetTownHallLevel={handleSetTownHallLevel} />
         </Section>
       </div>
       <div>
         <Section title="進捗状況管理">
-          <VillageProgressForm troops={troops} townHallLevel={townHallLevel} setTownHallLevel={setTownHallLevel} />
+          <SelectTHLevel townHallLevel={townHallLevel} handleSetTownHallLevel={handleSetTownHallLevel} />
+          <VillageProgressForm townHallLevel={townHallLevel} troops={troops} THData={THData} />
         </Section>
       </div>
     </>

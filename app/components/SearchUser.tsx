@@ -7,26 +7,21 @@ import { BASE_URL } from '../constants/paths';
 
 type Props = {
   setTroops: React.Dispatch<React.SetStateAction<Troop[] | null>>
-  setTownHallLevel: React.Dispatch<React.SetStateAction<number>>
+  handleSetTownHallLevel: (level: number) => Promise<void>;
 }
 
-const SearchUser = ( { setTroops, setTownHallLevel }: Props) => {
+const SearchUser = ( { setTroops, handleSetTownHallLevel }: Props) => {
 
   const [playerId, setPlayerId] = useState<string>("");
 
 
   const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     if(playerId === "") return
 
     try {
       const response = await fetch(`${BASE_URL}/api/players/${encodeURIComponent(playerId)}`, {
-        method: "GET",
-        cache: 'no-store',
-        headers: {
-          'Content-Type': 'application/json'
-        }
+        method: "GET"
       })
 
       if(!response.ok) {
@@ -36,7 +31,7 @@ const SearchUser = ( { setTroops, setTownHallLevel }: Props) => {
       const data: Player = await response.json();
 
       setTroops(data.troops);
-      setTownHallLevel(data.townHallLevel);
+      await handleSetTownHallLevel(data.townHallLevel);
     }catch(error){
       console.error(error);
     }

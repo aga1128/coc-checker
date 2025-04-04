@@ -656,10 +656,10 @@ export const TH_DATA = [
       { name: "かくしテスラ", maxCount: 5, maxLevel: 16 },
       { name: "ボムタワー", maxCount: 2, maxLevel: 12 },
       { name: "巨大クロスボウ", maxCount: 4, maxLevel: 12 },
-      { name: "インフェルノタワー", maxCount: 3, maxLevel: 10 },
+      { name: "インフェルノタワー", maxCount: 3, maxLevel: 11 },
       { name: "インフェルノ砲", maxCount: 1, maxLevel: 5 },
       { name: "投石機", maxCount: 2, maxLevel: 6 },
-      { name: "大工の小屋", maxCount: 5, maxLevel: 6 },
+      { name: "大工の小屋", maxCount: 5, maxLevel: 7 },
       { name: "呪文タワー", maxCount: 2, maxLevel: 3 },
       { name: "モノリス", maxCount: 1, maxLevel: 3 },
       { name: "跳弾大砲", maxCount: 3, maxLevel: 3 },
@@ -678,16 +678,16 @@ export const TH_DATA = [
       { name: "ギガ爆弾", maxCount: 1, maxLevel: 3 }
     ],
     armies: [
-      { name: "アーミーキャンプ", maxCount: 4, maxLevel: 12 },
+      { name: "アーミーキャンプ", maxCount: 4, maxLevel: 13 },
       { name: "兵舎", maxCount: 1, maxLevel: 18 },
       { name: "ラボ", maxCount: 1, maxLevel: 15 },
       { name: "呪文工場", maxCount: 1, maxLevel: 8 },
-      { name: "闇の兵舎", maxCount: 1, maxLevel: 11 },
+      { name: "闇の兵舎", maxCount: 1, maxLevel: 12 },
       { name: "ヒーローホール", maxCount: 1, maxLevel: 11 },
       { name: "闇の呪文工場", maxCount: 1, maxLevel: 6 },
       { name: "鍛冶屋", maxCount: 1, maxLevel: 9 },
       { name: "突破工房", maxCount: 1, maxLevel: 8 },
-      { name: "ペット小屋", maxCount: 1, maxLevel: 10 }
+      { name: "ペット小屋", maxCount: 1, maxLevel: 11 }
     ],
     resources: [
       { name: "金山", maxCount: 7, maxLevel: 16 },
