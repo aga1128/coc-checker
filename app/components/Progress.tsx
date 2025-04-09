@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Section from '../components/layouts/Section';
 import SearchUser from '../components/SearchUser';
 import SelectTHLevel from '../components/SelectTHLevel';
@@ -14,7 +14,27 @@ const Progress = () => {
   const [troops, setTroops] = useState<Troop[] | null>(null);
   const [THData, setTHData] = useState<THData | null>(null);
 
-  console.log(townHallLevel)
+  useEffect(() => {
+    const fetchData = async() => {
+      try {
+        const response = await fetch(`${BASE_URL}/api/th-levels/${townHallLevel}`, {
+          method: "GET"
+        })
+
+        if(!response.ok) {
+          throw new Error()
+        }
+        const data: THData = await response.json();
+        setTHData(data);
+        console.log(data);
+      }catch(error){
+        console.error(error)
+      }
+    }
+
+    fetchData();
+  }, [])
+
   const handleSetTownHallLevel = async(level: number) => {
     setTownHallLevel(level);
     try {
@@ -42,7 +62,7 @@ const Progress = () => {
       <div>
         <Section title="進捗状況管理">
           <SelectTHLevel townHallLevel={townHallLevel} handleSetTownHallLevel={handleSetTownHallLevel} />
-          <VillageProgressForm townHallLevel={townHallLevel} troops={troops} THData={THData} />
+          <VillageProgressForm troops={troops} THData={THData} />
         </Section>
       </div>
     </>

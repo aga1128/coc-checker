@@ -1,6 +1,5 @@
-import { getCoCDataByTHLevel } from "@/app/utils/firestore/functions";
 import { NextRequest, NextResponse } from "next/server";
-
+import { getCoCDataByTHLevel } from "@/app/utils/firestore/functions";
 
 export async function GET (req: NextRequest, { params }: { params: Promise<{ level: number }> }) {
   const { level } = await params;
