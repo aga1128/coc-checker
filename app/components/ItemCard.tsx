@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../components/layouts/Modal';
+import ItemLevel from '../components/ItemLevel';
 import { CategoryData } from '../types/coc';
 
 type Props = {
@@ -29,17 +30,7 @@ const ItemCard = ({ data }: Props) => {
       <Modal isOpen={isOpen} setter={setOpen} title={data.name}>
         <div>
           {maxCount.map((count) => (
-            <div key={count} className="flex items-center">
-              {maxLevel.map((level) => (
-                <button 
-                  key={level} 
-                  onClick={handleClick}
-                  className="flex items-center justify-center w-8 h-8 p-2 border bg-red-300"
-                >
-                  {level}
-                </button>
-              ))}
-            </div>
+            <ItemLevel key={count} maxLevel={maxLevel} />
           ))}
         </div>
       </Modal>
