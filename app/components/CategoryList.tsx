@@ -10,7 +10,7 @@ type Props = {
 const CategoryList = ({ name, categoryData }: Props) => {
   return (
     <>
-      {name}
+      <p className="mb-4 border-b">{name}</p>
       {categoryData.map((data) => (
         <ItemCard key={data.name} data={data} />
       ))}

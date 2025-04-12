@@ -5,19 +5,25 @@ import TroopList from '../components/TroopList';
 import { THData, Troop } from '../types/coc';
 
 type Props = {
-  townHallLevel: number;
   troops: Troop[] | null;
   THData: THData | null;
 }
 
-const VillageProgressForm = ({ townHallLevel, troops, THData }: Props) => {
-  console.log("data",THData);
-  console.log("level",townHallLevel)
+const VillageProgressForm = ({ troops, THData }: Props) => {
+
+  const handleRegister = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try{
+
+    }catch(error){
+      console.error(error);
+    }
+  }
   if(THData === null) return
 
   return (
     <>
-      <form action="">
+      <form onSubmit={handleRegister}>
         <div className="flex">
           <div className="w-1/2">
             <BuildingList buildingData={THData} />
@@ -26,6 +32,7 @@ const VillageProgressForm = ({ townHallLevel, troops, THData }: Props) => {
             <TroopList troops={troops}/>
           </div>
         </div>
+        <button type="submit">登録する</button>
       </form>
     </>
   )

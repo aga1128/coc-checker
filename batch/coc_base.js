@@ -5,14 +5,14 @@ export const TH_DATA = [
       { name: "大砲", maxCount: 1, maxLevel: 2 }
     ],
     armies: [
-      { name: "アーミーキャンプ", maxCount: 1, maxLevel: 1},
+      { name: "アーミーキャンプ", maxCount: 1, maxLevel: 1 },
       { name: "兵舎", maxCount: 1, maxLevel: 3 }
     ],
     resources: [
       { name: "金山", maxCount: 1, maxLevel: 2 },
       { name: "エリクサーポンプ", maxCount: 1, maxLevel: 2 },
       { name: "金庫", maxCount: 1, maxLevel: 1 },
-      { name: "エリクサータンク", maxCount: 1,maxLevel: 1 }
+      { name: "エリクサータンク", maxCount: 1, maxLevel: 1 }
     ]
   },
   {
