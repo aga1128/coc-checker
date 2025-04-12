@@ -10,7 +10,9 @@ export default {
     extend: {
       colors: {
         'main-color': '#F2F0E9',
+        'sub-color': '#FEC463',
         'section-color': '#FDFBF5'
+
       },
     },
   },
