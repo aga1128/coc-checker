@@ -23,16 +23,16 @@ const VillageProgressForm = ({ troops, THData }: Props) => {
 
   return (
     <>
-      <form onSubmit={handleRegister}>
+      <form onSubmit={handleRegister} className="flex flex-col">
         <div className="flex">
           <div className="w-1/2">
             <BuildingList buildingData={THData} />
           </div>
           <div className="w-1/2">
-            <TroopList troops={troops}/>
+            <TroopList troops={troops} />
           </div>
         </div>
-        <button type="submit">登録する</button>
+        <button type="submit" className="w-3/5 mx-auto p-2 rounded bg-sub-color border-2 border-black">登録する</button>
       </form>
     </>
   )
