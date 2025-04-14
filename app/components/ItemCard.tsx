@@ -45,7 +45,7 @@ const ItemCard = ({ data }: Props) => {
   return (
     <>
       <div
-        className={`flex items-center p-4 mb-2 border rounded cursor-pointer ${isCompleted && "bg-sub-color"}`}
+        className={`flex items-center p-4 mb-2 border rounded cursor-pointer ${isCompleted && "bg-sub-color border-2 border-black"}`}
         onClick={() => setOpen(true)}
       >
         <div>image</div>
