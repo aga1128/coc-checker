@@ -1,15 +1,21 @@
 'use client'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BuildingList from '../components/BuildingList';
 import TroopList from '../components/TroopList';
 import { THData, Troop } from '../types/coc';
 
 type Props = {
-  troops: Troop[] | null;
+  troopsData: Troop[] | null;
   THData: THData | null;
 }
 
-const VillageProgressForm = ({ troops, THData }: Props) => {
+const VillageProgressForm = ({ troopsData, THData }: Props) => {
+  const [buildings, setBuildings] = useState();
+  const [troops, setTroops] = useState<Troop[] | null>(null);
+
+  useEffect(() => {
+    setTroops(troopsData);
+  },[troopsData])
 
   const handleRegister = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
