@@ -10,7 +10,7 @@ type Props = {
 }
 
 const VillageProgressForm = ({ troopsData, THData }: Props) => {
-  const [buildings, setBuildings] = useState();
+  // const [buildings, setBuildings] = useState();
   const [troops, setTroops] = useState<Troop[] | null>(null);
 
   useEffect(() => {
