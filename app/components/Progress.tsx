@@ -26,7 +26,6 @@ const Progress = () => {
         }
         const data: THData = await response.json();
         setTHData(data);
-        console.log(data);
       }catch(error){
         console.error(error)
       }
@@ -62,7 +61,7 @@ const Progress = () => {
       <div>
         <Section title="進捗状況管理">
           <SelectTHLevel townHallLevel={townHallLevel} handleSetTownHallLevel={handleSetTownHallLevel} />
-          <VillageProgressForm troops={troops} THData={THData} />
+          <VillageProgressForm troopsData={troops} THData={THData} />
         </Section>
       </div>
     </>
