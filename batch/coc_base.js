@@ -1,85 +1,125 @@
 export const TH_DATA = [
   {
     THLevel: "TH1",
-    defenses: [
-      { name: "大砲", maxCount: 1, maxLevel: 2 }
-    ],
-    armies: [
-      { name: "アーミーキャンプ", maxCount: 1, maxLevel: 1 },
-      { name: "兵舎", maxCount: 1, maxLevel: 3 }
-    ],
-    resources: [
-      { name: "金山", maxCount: 1, maxLevel: 2 },
-      { name: "エリクサーポンプ", maxCount: 1, maxLevel: 2 },
-      { name: "金庫", maxCount: 1, maxLevel: 1 },
-      { name: "エリクサータンク", maxCount: 1, maxLevel: 1 }
-    ]
+    buildings: {
+      defenses: [
+        { name: "大砲", maxCount: 1, maxLevel: 2 }
+      ],
+      armies: [
+        { name: "アーミーキャンプ", maxCount: 1, maxLevel: 1 },
+        { name: "兵舎", maxCount: 1, maxLevel: 3 }
+      ],
+      resources: [
+        { name: "金山", maxCount: 1, maxLevel: 2 },
+        { name: "エリクサーポンプ", maxCount: 1, maxLevel: 2 },
+        { name: "金庫", maxCount: 1, maxLevel: 1 },
+        { name: "エリクサータンク", maxCount: 1, maxLevel: 1 }
+      ]
+    },
+    troops: {
+      units: [
+        { name: "バーバリアン" , maxLevel: 1 },
+        { name: "アーチャー", maxLevel: 1 },
+        { name: "ジャイアント", maxLevel: 1 }
+      ]
+    }
   },
   {
     THLevel: "TH2",
-    defenses: [
-      { name: "大砲", maxCount: 2, maxLevel: 3 },
-      { name: "アーチャータワー", maxCount: 1, maxLevel: 2 }
-    ],
-    armies: [
-      { name: "アーミーキャンプ", maxCount: 1, maxLevel: 2 },
-      { name: "兵舎", maxCount: 1, maxLevel: 4 }
-    ],
-    resources: [
-      { name: "金山", maxCount: 2, maxLevel: 4 },
-      { name: "エリクサーポンプ", maxCount: 2, maxLevel: 4 },
-      { name: "金庫", maxCount: 1, maxLevel: 3 },
-      { name: "エリクサータンク", maxCount: 1, maxLevel: 3 },
-      { name: "クランの城", maxCount: 1, maxLevel: 1 }
-    ]
+    buildings: {
+      defenses: [
+        { name: "大砲", maxCount: 2, maxLevel: 3 },
+        { name: "アーチャータワー", maxCount: 1, maxLevel: 2 }
+      ],
+      armies: [
+        { name: "アーミーキャンプ", maxCount: 1, maxLevel: 2 },
+        { name: "兵舎", maxCount: 1, maxLevel: 4 }
+      ],
+      resources: [
+        { name: "金山", maxCount: 2, maxLevel: 4 },
+        { name: "エリクサーポンプ", maxCount: 2, maxLevel: 4 },
+        { name: "金庫", maxCount: 1, maxLevel: 3 },
+        { name: "エリクサータンク", maxCount: 1, maxLevel: 3 },
+        { name: "クランの城", maxCount: 1, maxLevel: 1 }
+      ]
+    },
+    troops: {
+      units: [
+        { name: "バーバリアン" , maxLevel: 1 },
+        { name: "アーチャー", maxLevel: 1 },
+        { name: "ジャイアント", maxLevel: 1 },
+        { name: "ゴブリン", maxLevel: 1 }
+      ]
+    }
   },
   {
     THLevel: "TH3",
-    defenses: [
-      { name: "大砲", maxCount: 2, maxLevel: 4 },
-      { name: "アーチャータワー", maxCount: 1, maxLevel: 3 },
-      { name: "迫撃砲", maxCount: 1, maxLevel: 1 }
-    ],
-    traps: [
-      { name: "爆弾", maxCount: 2, maxLevel: 2 }
-    ],
-    armies: [
-      { name: "アーミーキャンプ", maxCount: 2, maxLevel: 3 },
-      { name: "兵舎", maxCount: 1, maxLevel: 5 },
-      { name: "ラボ", maxCount: 1, maxLevel: 1 }
-    ],
-    resources: [
-      { name: "金山", maxCount: 3, maxLevel: 6 },
-      { name: "エリクサーポンプ", maxCount: 3, maxLevel: 6 },
-      { name: "金庫", maxCount: 2, maxLevel: 6 },
-      { name: "エリクサータンク", maxCount: 2, maxLevel: 6 },
-      { name: "クランの城", maxCount: 1, maxLevel: 1 }
-    ]
+    buildings: {
+      defenses: [
+        { name: "大砲", maxCount: 2, maxLevel: 4 },
+        { name: "アーチャータワー", maxCount: 1, maxLevel: 3 },
+        { name: "迫撃砲", maxCount: 1, maxLevel: 1 }
+      ],
+      traps: [
+        { name: "爆弾", maxCount: 2, maxLevel: 2 }
+      ],
+      armies: [
+        { name: "アーミーキャンプ", maxCount: 2, maxLevel: 3 },
+        { name: "兵舎", maxCount: 1, maxLevel: 5 },
+        { name: "ラボ", maxCount: 1, maxLevel: 1 }
+      ],
+      resources: [
+        { name: "金山", maxCount: 3, maxLevel: 6 },
+        { name: "エリクサーポンプ", maxCount: 3, maxLevel: 6 },
+        { name: "金庫", maxCount: 2, maxLevel: 6 },
+        { name: "エリクサータンク", maxCount: 2, maxLevel: 6 },
+        { name: "クランの城", maxCount: 1, maxLevel: 1 }
+      ]
+    },
+    troops: {
+      units: [
+        { name: "バーバリアン" , maxLevel: 2 },
+        { name: "アーチャー", maxLevel: 2 },
+        { name: "ジャイアント", maxLevel: 1 },
+        { name: "ゴブリン", maxLevel: 2 },
+        { name: "ウォールブレーカー", maxLevel: "" }
+      ]
+    }
   },
   {
     THLevel: "TH4",
-    defenses: [
-      { name: "大砲", maxCount: 2, maxLevel: 5 },
-      { name: "アーチャータワー", maxCount: 2, maxLevel: 4 },
-      { name: "迫撃砲", maxCount: 1, maxLevel: 2 },
-      { name: "対空砲", maxCount: 1, maxLevel: 2 }
-    ],
-    traps: [
-      { name: "爆弾", maxCount: 2, maxLevel: 2 },
-      { name: "ばねトラップ", maxCount: 2, maxLevel: 1 }
-    ],
-    armies: [
-      { name: "アーミーキャンプ", maxCount: 2, maxLevel: 4 },
-      { name: "兵舎", maxCount: 1, maxLevel: 6 },
-      { name: "ラボ", maxCount: 1, maxLevel: 2 }
-    ],
-    resources: [
-      { name: "金山", maxCount: 4, maxLevel: 8 },
-      { name: "エリクサーポンプ", maxCount: 4, maxLevel: 8 },
-      { name: "金庫", maxCount: 2, maxLevel: 8 },
-      { name: "エリクサータンク", maxCount: 2, maxLevel: 8 },
-      { name: "クランの城", maxCount: 1, maxLevel: 2 }
-    ]
+    buildings: {
+      defenses: [
+        { name: "大砲", maxCount: 2, maxLevel: 5 },
+        { name: "アーチャータワー", maxCount: 2, maxLevel: 4 },
+        { name: "迫撃砲", maxCount: 1, maxLevel: 2 },
+        { name: "対空砲", maxCount: 1, maxLevel: 2 }
+      ],
+      traps: [
+        { name: "爆弾", maxCount: 2, maxLevel: 2 },
+        { name: "ばねトラップ", maxCount: 2, maxLevel: 1 }
+      ],
+      armies: [
+        { name: "アーミーキャンプ", maxCount: 2, maxLevel: 4 },
+        { name: "兵舎", maxCount: 1, maxLevel: 6 },
+        { name: "ラボ", maxCount: 1, maxLevel: 2 }
+      ],
+      resources: [
+        { name: "金山", maxCount: 4, maxLevel: 8 },
+        { name: "エリクサーポンプ", maxCount: 4, maxLevel: 8 },
+        { name: "金庫", maxCount: 2, maxLevel: 8 },
+        { name: "エリクサータンク", maxCount: 2, maxLevel: 8 },
+        { name: "クランの城", maxCount: 1, maxLevel: 2 }
+      ]
+    },
+    troops: {
+      units: [
+        { name: "バーバリアン" , maxLevel: 2 },
+        { name: "アーチャー", maxLevel: 2 },
+        { name: "ジャイアント", maxLevel: 2 },
+        { name: "ゴブリン", maxLevel: 2 }
+      ]
+    }
   },
   {
     THLevel: "TH5",
