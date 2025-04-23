@@ -16,7 +16,7 @@ export const TH_DATA = [
         { name: "エリクサータンク", maxCount: 1, maxLevel: 1 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 1 },
         { name: "アーチャー", maxLevel: 1 },
@@ -43,7 +43,7 @@ export const TH_DATA = [
         { name: "クランの城", maxCount: 1, maxLevel: 1 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 1 },
         { name: "アーチャー", maxLevel: 1 },
@@ -76,7 +76,7 @@ export const TH_DATA = [
         { name: "クランの城", maxCount: 1, maxLevel: 1 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 2 },
         { name: "アーチャー", maxLevel: 2 },
@@ -112,7 +112,7 @@ export const TH_DATA = [
         { name: "クランの城", maxCount: 1, maxLevel: 2 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 2 },
         { name: "アーチャー", maxLevel: 2 },
@@ -152,7 +152,7 @@ export const TH_DATA = [
         { name: "クランの城", maxCount: 1, maxLevel: 2 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 3 },
         { name: "アーチャー", maxLevel: 3 },
@@ -195,7 +195,7 @@ export const TH_DATA = [
         { name: "クランの城", maxCount: 1, maxLevel: 3 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 3 },
         { name: "アーチャー", maxLevel: 3 },
@@ -248,7 +248,7 @@ export const TH_DATA = [
         { name: "バーバリアンキング", maxLevel: 10 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 4 },
         { name: "アーチャー", maxLevel: 4 },
@@ -259,6 +259,10 @@ export const TH_DATA = [
         { name: "ウィザード", maxLevel: 4 },
         { name: "ヒーラー", maxLevel: 2 },
         { name: "ドラゴン", maxLevel: 2 }
+      ],
+      dark_elixir_units: [
+        { name: "ガーゴイル", maxLevel: 2 },
+        { name: "ホグライダー", maxLevel: 2 }
       ]
     }
   },
@@ -307,7 +311,7 @@ export const TH_DATA = [
         { name: "アーチャークイーン", maxLevel: 10 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 5 },
         { name: "アーチャー", maxLevel: 5 },
@@ -319,6 +323,12 @@ export const TH_DATA = [
         { name: "ヒーラー", maxLevel: 3 },
         { name: "ドラゴン", maxLevel: 3 },
         { name: "P.E.K.K.A", maxLevel: 3 }
+      ],
+      dark_elixir_units: [
+        { name: "ガーゴイル", maxLevel: 4 },
+        { name: "ホグライダー", maxLevel: 4 },
+        { name: "バルキリー", maxLevel: 2 },
+        { name: "ゴーレム", maxLevel: 2 }
       ]
     }
   },
@@ -369,7 +379,7 @@ export const TH_DATA = [
         { name: "ガーゴイルプリンス", maxLevel: 10 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 6 },
         { name: "アーチャー", maxLevel: 6 },
@@ -382,6 +392,14 @@ export const TH_DATA = [
         { name: "ドラゴン", maxLevel: 4 },
         { name: "P.E.K.K.A", maxLevel: 4 },
         { name: "ベビードラゴン", maxLevel: 2 }
+      ],
+      dark_elixir_units: [
+        { name: "ガーゴイル", maxLevel: 5 },
+        { name: "ホグライダー", maxLevel: 5 },
+        { name: "バルキリー", maxLevel: 4 },
+        { name: "ゴーレム", maxLevel: 4 },
+        { name: "ネクロマンサー", maxLevel: 2 },
+        { name: "ラヴァハウンド", maxLevel: 2 }
       ]
     }
   },
@@ -433,7 +451,7 @@ export const TH_DATA = [
         { name: "ガーゴイルプリンス", maxLevel: 20 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 7 },
         { name: "アーチャー", maxLevel: 7 },
@@ -447,6 +465,15 @@ export const TH_DATA = [
         { name: "P.E.K.K.A", maxLevel: 6 },
         { name: "ベビードラゴン", maxLevel: 4 },
         { name: "ディガー", maxLevel: 3 }
+      ],
+      dark_elixir_units: [
+        { name: "ガーゴイル", maxLevel: 6 },
+        { name: "ホグライダー", maxLevel: 6 },
+        { name: "バルキリー", maxLevel: 5 },
+        { name: "ゴーレム", maxLevel: 5 },
+        { name: "ネクロマンサー", maxLevel: 3 },
+        { name: "ラヴァハウンド", maxLevel: 3 },
+        { name: "ボウラー", maxLevel: 2 }
       ]
     }
   },
@@ -501,7 +528,7 @@ export const TH_DATA = [
         { name: "グランドウォーデン", maxLevel: 20 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 8 },
         { name: "アーチャー", maxLevel: 8 },
@@ -516,6 +543,16 @@ export const TH_DATA = [
         { name: "ベビードラゴン", maxLevel: 5 },
         { name: "ディガー", maxLevel: 5 },
         { name: "ライトニングドラゴン", maxLevel: 2 }
+      ],
+      dark_elixir_units: [
+        { name: "ガーゴイル", maxLevel: 7 },
+        { name: "ホグライダー", maxLevel: 7 },
+        { name: "バルキリー", maxLevel: 6 },
+        { name: "ゴーレム", maxLevel: 7 },
+        { name: "ネクロマンサー", maxLevel: 4 },
+        { name: "ラヴァハウンド", maxLevel: 4 },
+        { name: "ボウラー", maxLevel: 3 },
+        { name: "アイスゴーレム", maxLevel: 3 }
       ]
     }
   },
@@ -572,7 +609,7 @@ export const TH_DATA = [
         { name: "グランドウォーデン", maxLevel: 40 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 9 },
         { name: "アーチャー", maxLevel: 9 },
@@ -588,6 +625,17 @@ export const TH_DATA = [
         { name: "ディガー", maxLevel: 6 },
         { name: "ライトニングドラゴン", maxLevel: 3 },
         { name: "イエティ", maxLevel: 2 }
+      ],
+      dark_elixir_units: [
+        { name: "ガーゴイル", maxLevel: 8 },
+        { name: "ホグライダー", maxLevel: 9 },
+        { name: "バルキリー", maxLevel: 7 },
+        { name: "ゴーレム", maxLevel: 9 },
+        { name: "ネクロマンサー", maxLevel: 5 },
+        { name: "ラヴァハウンド", maxLevel: 5 },
+        { name: "ボウラー", maxLevel: 4 },
+        { name: "アイスゴーレム", maxLevel: 5 },
+        { name: "ストライカー", maxLevel: 2 }
       ]
     }
   },
@@ -646,7 +694,7 @@ export const TH_DATA = [
         { name: "ロイヤルチャンピオン", maxLevel: 25 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 9 },
         { name: "アーチャー", maxLevel: 9 },
@@ -663,6 +711,18 @@ export const TH_DATA = [
         { name: "ライトニングドラゴン", maxLevel: 4 },
         { name: "イエティ", maxLevel: 3 },
         { name: "ドラゴンライダー", maxLevel: 2 }
+      ],
+      dark_elixir_units: [
+        { name: "ガーゴイル", maxLevel: 9 },
+        { name: "ホグライダー", maxLevel: 10 },
+        { name: "バルキリー", maxLevel: 8 },
+        { name: "ゴーレム", maxLevel: 10 },
+        { name: "ネクロマンサー", maxLevel: 5 },
+        { name: "ラヴァハウンド", maxLevel: 6 },
+        { name: "ボウラー", maxLevel: 5 },
+        { name: "アイスゴーレム", maxLevel: 5 },
+        { name: "ストライカー", maxLevel: 3 },
+        { name: "見習いウォーデン", maxLevel: 2 }
       ]
     }
   },
@@ -723,7 +783,7 @@ export const TH_DATA = [
         { name: "ロイヤルチャンピオン", maxLevel: 30 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 10 },
         { name: "アーチャー", maxLevel: 10 },
@@ -741,6 +801,19 @@ export const TH_DATA = [
         { name: "イエティ", maxLevel: 4 },
         { name: "ドラゴンライダー", maxLevel: 3 },
         { name: "エレクトロタイタン", maxLevel: 2 }
+      ],
+      dark_elixir_units: [
+        { name: "ガーゴイル", maxLevel: 10 },
+        { name: "ホグライダー", maxLevel: 11 },
+        { name: "バルキリー", maxLevel: 9 },
+        { name: "ゴーレム", maxLevel: 11 },
+        { name: "ネクロマンサー", maxLevel: 5 },
+        { name: "ラヴァハウンド", maxLevel: 6 },
+        { name: "ボウラー", maxLevel: 6 },
+        { name: "アイスゴーレム", maxLevel: 6 },
+        { name: "ストライカー", maxLevel: 3 },
+        { name: "見習いウォーデン", maxLevel: 3 },
+        { name: "ドルイド", maxLevel: 2 }
       ]
     }
   },
@@ -803,7 +876,7 @@ export const TH_DATA = [
         { name: "ロイヤルチャンピオン", maxLevel: 40 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 11 },
         { name: "アーチャー", maxLevel: 11 },
@@ -822,6 +895,20 @@ export const TH_DATA = [
         { name: "ドラゴンライダー", maxLevel: 3 },
         { name: "エレクトロタイタン", maxLevel: 3 },
         { name: "ルートライダー", maxLevel: 2 }
+      ],
+      dark_elixir_units: [
+        { name: "ガーゴイル", maxLevel: 11 },
+        { name: "ホグライダー", maxLevel: 12 },
+        { name: "バルキリー", maxLevel: 10 },
+        { name: "ゴーレム", maxLevel: 12 },
+        { name: "ネクロマンサー", maxLevel: 6 },
+        { name: "ラヴァハウンド", maxLevel: 6 },
+        { name: "ボウラー", maxLevel: 7 },
+        { name: "アイスゴーレム", maxLevel: 7 },
+        { name: "ストライカー", maxLevel: 3 },
+        { name: "見習いウォーデン", maxLevel: 4 },
+        { name: "ドルイド", maxLevel: 3 },
+        { name: "オーブン", maxLevel: 2 }
       ]
     }
   },
@@ -885,7 +972,7 @@ export const TH_DATA = [
         { name: "ロイヤルチャンピオン", maxLevel: 45 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 12 },
         { name: "アーチャー", maxLevel: 12 },
@@ -905,6 +992,20 @@ export const TH_DATA = [
         { name: "エレクトロタイタン", maxLevel: 4 },
         { name: "ルートライダー", maxLevel: 3 },
         { name: "スピアスローワー", maxLevel: 2 }
+      ],
+      dark_elixir_units: [
+        { name: "ガーゴイル", maxLevel: 12 },
+        { name: "ホグライダー", maxLevel: 13 },
+        { name: "バルキリー", maxLevel: 11 },
+        { name: "ゴーレム", maxLevel: 13 },
+        { name: "ネクロマンサー", maxLevel: 7 },
+        { name: "ラヴァハウンド", maxLevel: 6 },
+        { name: "ボウラー", maxLevel: 8 },
+        { name: "アイスゴーレム", maxLevel: 8 },
+        { name: "ストライカー", maxLevel: 3 },
+        { name: "見習いウォーデン", maxLevel: 4 },
+        { name: "ドルイド", maxLevel: 4 },
+        { name: "オーブン", maxLevel: 3 }
       ]
     }
   },
@@ -971,7 +1072,7 @@ export const TH_DATA = [
         { name: "ロイヤルチャンピオン", maxLevel: 50 }
       ]
     },
-    troops: {
+    labs: {
       elixir_units: [
         { name: "バーバリアン" , maxLevel: 12 },
         { name: "アーチャー", maxLevel: 13 },
@@ -991,6 +1092,20 @@ export const TH_DATA = [
         { name: "エレクトロタイタン", maxLevel: 4 },
         { name: "ルートライダー", maxLevel: 3 },
         { name: "スピアスローワー", maxLevel: 3 }
+      ],
+      dark_elixir_units: [
+        { name: "ガーゴイル", maxLevel: 13 },
+        { name: "ホグライダー", maxLevel: 14 },
+        { name: "バルキリー", maxLevel: 11 },
+        { name: "ゴーレム", maxLevel: 14 },
+        { name: "ネクロマンサー", maxLevel: 7 },
+        { name: "ラヴァハウンド", maxLevel: 6 },
+        { name: "ボウラー", maxLevel: 9 },
+        { name: "アイスゴーレム", maxLevel: 9 },
+        { name: "ストライカー", maxLevel: 3 },
+        { name: "見習いウォーデン", maxLevel: 4 },
+        { name: "ドルイド", maxLevel: 4 },
+        { name: "オーブン", maxLevel: 4 }
       ]
     }
   }
