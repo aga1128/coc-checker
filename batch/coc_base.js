@@ -445,7 +445,8 @@ export const TH_DATA = [
         { name: "ヒーラー", maxLevel: 4 },
         { name: "ドラゴン", maxLevel: 5 },
         { name: "P.E.K.K.A", maxLevel: 6 },
-        { name: "ベビードラゴン", maxLevel: 4 }
+        { name: "ベビードラゴン", maxLevel: 4 },
+        { name: "ディガー", maxLevel: 3 }
       ]
     }
   },
@@ -512,7 +513,9 @@ export const TH_DATA = [
         { name: "ヒーラー", maxLevel: 5 },
         { name: "ドラゴン", maxLevel: 6 },
         { name: "P.E.K.K.A", maxLevel: 7 },
-        { name: "ベビードラゴン", maxLevel: 5 }
+        { name: "ベビードラゴン", maxLevel: 5 },
+        { name: "ディガー", maxLevel: 5 },
+        { name: "ライトニングドラゴン", maxLevel: 2 }
       ]
     }
   },
@@ -581,7 +584,10 @@ export const TH_DATA = [
         { name: "ヒーラー", maxLevel: 5 },
         { name: "ドラゴン", maxLevel: 7 },
         { name: "P.E.K.K.A", maxLevel: 8 },
-        { name: "ベビードラゴン", maxLevel: 6 }
+        { name: "ベビードラゴン", maxLevel: 6 },
+        { name: "ディガー", maxLevel: 6 },
+        { name: "ライトニングドラゴン", maxLevel: 3 },
+        { name: "イエティ", maxLevel: 2 }
       ]
     }
   },
@@ -652,7 +658,11 @@ export const TH_DATA = [
         { name: "ヒーラー", maxLevel: 6 },
         { name: "ドラゴン", maxLevel: 8 },
         { name: "P.E.K.K.A", maxLevel: 9 },
-        { name: "ベビードラゴン", maxLevel: 7 }
+        { name: "ベビードラゴン", maxLevel: 7 },
+        { name: "ディガー", maxLevel: 7 },
+        { name: "ライトニングドラゴン", maxLevel: 4 },
+        { name: "イエティ", maxLevel: 3 },
+        { name: "ドラゴンライダー", maxLevel: 2 }
       ]
     }
   },
@@ -725,7 +735,12 @@ export const TH_DATA = [
         { name: "ヒーラー", maxLevel: 7 },
         { name: "ドラゴン", maxLevel: 9 },
         { name: "P.E.K.K.A", maxLevel: 9 },
-        { name: "ベビードラゴン", maxLevel: 8 }
+        { name: "ベビードラゴン", maxLevel: 8 },
+        { name: "ディガー", maxLevel: 8 },
+        { name: "ライトニングドラゴン", maxLevel: 5 },
+        { name: "イエティ", maxLevel: 4 },
+        { name: "ドラゴンライダー", maxLevel: 3 },
+        { name: "エレクトロタイタン", maxLevel: 2 }
       ]
     }
   },
@@ -800,7 +815,12 @@ export const TH_DATA = [
         { name: "ヒーラー", maxLevel: 8 },
         { name: "ドラゴン", maxLevel: 10 },
         { name: "P.E.K.K.A", maxLevel: 10 },
-        { name: "ベビードラゴン", maxLevel: 9 }
+        { name: "ベビードラゴン", maxLevel: 9 },
+        { name: "ディガー", maxLevel: 9 },
+        { name: "ライトニングドラゴン", maxLevel: 6 },
+        { name: "イエティ", maxLevel: 5 },
+        { name: "ドラゴンライダー", maxLevel: 3 },
+        { name: "エレクトロタイタン", maxLevel: 3 }
       ]
     }
   },
@@ -876,7 +896,12 @@ export const TH_DATA = [
         { name: "ヒーラー", maxLevel: 9 },
         { name: "ドラゴン", maxLevel: 11 },
         { name: "P.E.K.K.A", maxLevel: 11 },
-        { name: "ベビードラゴン", maxLevel: 10 }
+        { name: "ベビードラゴン", maxLevel: 10 },
+        { name: "ディガー", maxLevel: 10 },
+        { name: "ライトニングドラゴン", maxLevel: 7 },
+        { name: "イエティ", maxLevel: 6 },
+        { name: "ドラゴンライダー", maxLevel: 4 },
+        { name: "エレクトロタイタン", maxLevel: 4 }
       ]
     }
   },
@@ -955,7 +980,12 @@ export const TH_DATA = [
         { name: "ヒーラー", maxLevel: 10 },
         { name: "ドラゴン", maxLevel: 12 },
         { name: "P.E.K.K.A", maxLevel: 12 },
-        { name: "ベビードラゴン", maxLevel: 11 }
+        { name: "ベビードラゴン", maxLevel: 11 },
+        { name: "ディガー", maxLevel: 11 },
+        { name: "ライトニングドラゴン", maxLevel: 8 },
+        { name: "イエティ", maxLevel: 7 },
+        { name: "ドラゴンライダー", maxLevel: 5 },
+        { name: "エレクトロタイタン", maxLevel: 4 }
       ]
     }
   }
