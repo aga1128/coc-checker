@@ -820,7 +820,8 @@ export const TH_DATA = [
         { name: "ライトニングドラゴン", maxLevel: 6 },
         { name: "イエティ", maxLevel: 5 },
         { name: "ドラゴンライダー", maxLevel: 3 },
-        { name: "エレクトロタイタン", maxLevel: 3 }
+        { name: "エレクトロタイタン", maxLevel: 3 },
+        { name: "ルートライダー", maxLevel: 2 }
       ]
     }
   },
@@ -901,7 +902,9 @@ export const TH_DATA = [
         { name: "ライトニングドラゴン", maxLevel: 7 },
         { name: "イエティ", maxLevel: 6 },
         { name: "ドラゴンライダー", maxLevel: 4 },
-        { name: "エレクトロタイタン", maxLevel: 4 }
+        { name: "エレクトロタイタン", maxLevel: 4 },
+        { name: "ルートライダー", maxLevel: 3 },
+        { name: "スピアスローワー", maxLevel: 2 }
       ]
     }
   },
@@ -985,7 +988,9 @@ export const TH_DATA = [
         { name: "ライトニングドラゴン", maxLevel: 8 },
         { name: "イエティ", maxLevel: 7 },
         { name: "ドラゴンライダー", maxLevel: 5 },
-        { name: "エレクトロタイタン", maxLevel: 4 }
+        { name: "エレクトロタイタン", maxLevel: 4 },
+        { name: "ルートライダー", maxLevel: 3 },
+        { name: "スピアスローワー", maxLevel: 3 }
       ]
     }
   }
