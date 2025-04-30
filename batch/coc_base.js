@@ -161,6 +161,9 @@ export const TH_DATA = [
         { name: "ウォールブレーカー", maxLevel: 2 },
         { name: "エアバルーン", maxLevel: 2 },
         { name: "ウィザード", maxLevel: 2 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 4 }
       ]
     }
   },
@@ -205,6 +208,10 @@ export const TH_DATA = [
         { name: "エアバルーン", maxLevel: 3 },
         { name: "ウィザード", maxLevel: 3 },
         { name: "ヒーラー", maxLevel: 1 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 4 },
+        { name: "ヒールの呪文", maxLevel: 3 }
       ]
     }
   },
@@ -263,6 +270,11 @@ export const TH_DATA = [
       dark_elixir_units: [
         { name: "ガーゴイル", maxLevel: 2 },
         { name: "ホグライダー", maxLevel: 2 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 4 },
+        { name: "ヒールの呪文", maxLevel: 4 },
+        { name: "レイジの呪文", maxLevel: 4 }
       ]
     }
   },
@@ -329,6 +341,11 @@ export const TH_DATA = [
         { name: "ホグライダー", maxLevel: 4 },
         { name: "バルキリー", maxLevel: 2 },
         { name: "ゴーレム", maxLevel: 2 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 5 },
+        { name: "ヒールの呪文", maxLevel: 5 },
+        { name: "レイジの呪文", maxLevel: 5 }
       ]
     }
   },
@@ -400,6 +417,13 @@ export const TH_DATA = [
         { name: "ゴーレム", maxLevel: 4 },
         { name: "ネクロマンサー", maxLevel: 2 },
         { name: "ラヴァハウンド", maxLevel: 2 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 6 },
+        { name: "ヒールの呪文", maxLevel: 6 },
+        { name: "レイジの呪文", maxLevel: 5 },
+        { name: "ジャンプの呪文", maxLevel: 2 },
+        { name: "フリーズの呪文", maxLevel: 2 }
       ]
     }
   },
@@ -474,6 +498,14 @@ export const TH_DATA = [
         { name: "ネクロマンサー", maxLevel: 3 },
         { name: "ラヴァハウンド", maxLevel: 3 },
         { name: "ボウラー", maxLevel: 2 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 7 },
+        { name: "ヒールの呪文", maxLevel: 7 },
+        { name: "レイジの呪文", maxLevel: 5 },
+        { name: "ジャンプの呪文", maxLevel: 3 },
+        { name: "フリーズの呪文", maxLevel: 5 },
+        { name: "クローンの呪文", maxLevel: 3 }
       ]
     }
   },
@@ -553,6 +585,15 @@ export const TH_DATA = [
         { name: "ラヴァハウンド", maxLevel: 4 },
         { name: "ボウラー", maxLevel: 3 },
         { name: "アイスゴーレム", maxLevel: 3 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 8 },
+        { name: "ヒールの呪文", maxLevel: 7 },
+        { name: "レイジの呪文", maxLevel: 5 },
+        { name: "ジャンプの呪文", maxLevel: 3 },
+        { name: "フリーズの呪文", maxLevel: 6 },
+        { name: "クローンの呪文", maxLevel: 5 },
+        { name: "インビジブルの呪文", maxLevel: 2 }
       ]
     }
   },
@@ -636,6 +677,15 @@ export const TH_DATA = [
         { name: "ボウラー", maxLevel: 4 },
         { name: "アイスゴーレム", maxLevel: 5 },
         { name: "ストライカー", maxLevel: 2 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 9 },
+        { name: "ヒールの呪文", maxLevel: 7 },
+        { name: "レイジの呪文", maxLevel: 6 },
+        { name: "ジャンプの呪文", maxLevel: 3 },
+        { name: "フリーズの呪文", maxLevel: 7 },
+        { name: "クローンの呪文", maxLevel: 5 },
+        { name: "インビジブルの呪文", maxLevel: 3 }
       ]
     }
   },
@@ -723,6 +773,16 @@ export const TH_DATA = [
         { name: "アイスゴーレム", maxLevel: 5 },
         { name: "ストライカー", maxLevel: 3 },
         { name: "見習いウォーデン", maxLevel: 2 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 9 },
+        { name: "ヒールの呪文", maxLevel: 8 },
+        { name: "レイジの呪文", maxLevel: 6 },
+        { name: "ジャンプの呪文", maxLevel: 4 },
+        { name: "フリーズの呪文", maxLevel: 7 },
+        { name: "クローンの呪文", maxLevel: 6 },
+        { name: "インビジブルの呪文", maxLevel: 4 },
+        { name: "リターンの呪文", maxLevel: 2 }
       ]
     }
   },
@@ -814,6 +874,16 @@ export const TH_DATA = [
         { name: "ストライカー", maxLevel: 3 },
         { name: "見習いウォーデン", maxLevel: 3 },
         { name: "ドルイド", maxLevel: 2 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 9 },
+        { name: "ヒールの呪文", maxLevel: 8 },
+        { name: "レイジの呪文", maxLevel: 6 },
+        { name: "ジャンプの呪文", maxLevel: 4 },
+        { name: "フリーズの呪文", maxLevel: 7 },
+        { name: "クローンの呪文", maxLevel: 7 },
+        { name: "インビジブルの呪文", maxLevel: 4 },
+        { name: "リターンの呪文", maxLevel: 3 }
       ]
     }
   },
@@ -909,6 +979,17 @@ export const TH_DATA = [
         { name: "見習いウォーデン", maxLevel: 4 },
         { name: "ドルイド", maxLevel: 3 },
         { name: "オーブン", maxLevel: 2 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 10 },
+        { name: "ヒールの呪文", maxLevel: 9 },
+        { name: "レイジの呪文", maxLevel: 6 },
+        { name: "ジャンプの呪文", maxLevel: 5 },
+        { name: "フリーズの呪文", maxLevel: 7 },
+        { name: "クローンの呪文", maxLevel: 8 },
+        { name: "インビジブルの呪文", maxLevel: 4 },
+        { name: "リターンの呪文", maxLevel: 4 },
+        { name: "リバイブの呪文", maxLevel: 2 }
       ]
     }
   },
@@ -1006,6 +1087,17 @@ export const TH_DATA = [
         { name: "見習いウォーデン", maxLevel: 4 },
         { name: "ドルイド", maxLevel: 4 },
         { name: "オーブン", maxLevel: 3 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 11 },
+        { name: "ヒールの呪文", maxLevel: 10 },
+        { name: "レイジの呪文", maxLevel: 6 },
+        { name: "ジャンプの呪文", maxLevel: 5 },
+        { name: "フリーズの呪文", maxLevel: 7 },
+        { name: "クローンの呪文", maxLevel: 8 },
+        { name: "インビジブルの呪文", maxLevel: 4 },
+        { name: "リターンの呪文", maxLevel: 5 },
+        { name: "リバイブの呪文", maxLevel: 3 }
       ]
     }
   },
@@ -1106,6 +1198,17 @@ export const TH_DATA = [
         { name: "見習いウォーデン", maxLevel: 4 },
         { name: "ドルイド", maxLevel: 4 },
         { name: "オーブン", maxLevel: 4 }
+      ],
+      spell: [
+        { name: "ライトニングの呪文", maxLevel: 12 },
+        { name: "ヒールの呪文", maxLevel: 11 },
+        { name: "レイジの呪文", maxLevel: 6 },
+        { name: "ジャンプの呪文", maxLevel: 5 },
+        { name: "フリーズの呪文", maxLevel: 7 },
+        { name: "クローンの呪文", maxLevel: 8 },
+        { name: "インビジブルの呪文", maxLevel: 4 },
+        { name: "リターンの呪文", maxLevel: 6 },
+        { name: "リバイブの呪文", maxLevel: 4 }
       ]
     }
   }
