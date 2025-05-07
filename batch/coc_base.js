@@ -1086,7 +1086,7 @@ export const TH_DATA = [
       pets: [
         { name: "L.A.S.S.I", maxLevel: 15 },
         { name: "エレクトロオウル", maxLevel: 10 },
-        { name: "ヤク", maxLevel: 10 },
+        { name: "ヤク", maxLevel: 15 },
         { name: "ユニコーン", maxLevel: 10 },
         { name: "フロスティ", maxLevel: 10 },
         { name: "ディギー", maxLevel: 10 },
@@ -1221,8 +1221,8 @@ export const TH_DATA = [
       ],
       pets: [
         { name: "L.A.S.S.I", maxLevel: 15 },
-        { name: "エレクトロオウル", maxLevel: 10 },
-        { name: "ヤク", maxLevel: 10 },
+        { name: "エレクトロオウル", maxLevel: 15 },
+        { name: "ヤク", maxLevel: 15 },
         { name: "ユニコーン", maxLevel: 10 },
         { name: "フロスティ", maxLevel: 10 },
         { name: "ディギー", maxLevel: 10 },
@@ -1362,9 +1362,9 @@ export const TH_DATA = [
       ],
       pets: [
         { name: "L.A.S.S.I", maxLevel: 15 },
-        { name: "エレクトロオウル", maxLevel: 10 },
-        { name: "ヤク", maxLevel: 10 },
-        { name: "ユニコーン", maxLevel: 10 },
+        { name: "エレクトロオウル", maxLevel: 15 },
+        { name: "ヤク", maxLevel: 15 },
+        { name: "ユニコーン", maxLevel: 15 },
         { name: "フロスティ", maxLevel: 10 },
         { name: "ディギー", maxLevel: 10 },
         { name: "ポイズンリザード", maxLevel: 10 },
