@@ -162,7 +162,7 @@ export const TH_DATA = [
         { name: "エアバルーン", maxLevel: 2 },
         { name: "ウィザード", maxLevel: 2 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 4 }
       ]
     }
@@ -209,7 +209,7 @@ export const TH_DATA = [
         { name: "ウィザード", maxLevel: 3 },
         { name: "ヒーラー", maxLevel: 1 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 4 },
         { name: "ヒールの呪文", maxLevel: 3 }
       ]
@@ -271,7 +271,7 @@ export const TH_DATA = [
         { name: "ガーゴイル", maxLevel: 2 },
         { name: "ホグライダー", maxLevel: 2 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 4 },
         { name: "ヒールの呪文", maxLevel: 4 },
         { name: "レイジの呪文", maxLevel: 4 }
@@ -342,10 +342,14 @@ export const TH_DATA = [
         { name: "バルキリー", maxLevel: 2 },
         { name: "ゴーレム", maxLevel: 2 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 5 },
         { name: "ヒールの呪文", maxLevel: 5 },
         { name: "レイジの呪文", maxLevel: 5 }
+      ],
+      dark_spells: [
+        { name: "ポイズンの呪文", maxLevel: 2 },
+        { name: "アースクエイクの呪文", maxLevel: 2 }
       ]
     }
   },
@@ -418,12 +422,18 @@ export const TH_DATA = [
         { name: "ネクロマンサー", maxLevel: 2 },
         { name: "ラヴァハウンド", maxLevel: 2 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 6 },
         { name: "ヒールの呪文", maxLevel: 6 },
         { name: "レイジの呪文", maxLevel: 5 },
         { name: "ジャンプの呪文", maxLevel: 2 },
         { name: "フリーズの呪文", maxLevel: 2 }
+      ],
+      dark_spells: [
+        { name: "ポイズンの呪文", maxLevel: 3 },
+        { name: "アースクエイクの呪文", maxLevel: 3 },
+        { name: "ヘイストの呪文", maxLevel: 2 },
+        { name: "スケルトンの呪文", maxLevel: 1 }
       ]
     }
   },
@@ -499,13 +509,20 @@ export const TH_DATA = [
         { name: "ラヴァハウンド", maxLevel: 3 },
         { name: "ボウラー", maxLevel: 2 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 7 },
         { name: "ヒールの呪文", maxLevel: 7 },
         { name: "レイジの呪文", maxLevel: 5 },
         { name: "ジャンプの呪文", maxLevel: 3 },
         { name: "フリーズの呪文", maxLevel: 5 },
         { name: "クローンの呪文", maxLevel: 3 }
+      ],
+      dark_spells: [
+        { name: "ポイズンの呪文", maxLevel: 4 },
+        { name: "アースクエイクの呪文", maxLevel: 4 },
+        { name: "ヘイストの呪文", maxLevel: 4 },
+        { name: "スケルトンの呪文", maxLevel: 3 },
+        { name: "コウモリの呪文", maxLevel: 3 }
       ]
     }
   },
@@ -586,7 +603,7 @@ export const TH_DATA = [
         { name: "ボウラー", maxLevel: 3 },
         { name: "アイスゴーレム", maxLevel: 3 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 8 },
         { name: "ヒールの呪文", maxLevel: 7 },
         { name: "レイジの呪文", maxLevel: 5 },
@@ -594,6 +611,13 @@ export const TH_DATA = [
         { name: "フリーズの呪文", maxLevel: 6 },
         { name: "クローンの呪文", maxLevel: 5 },
         { name: "インビジブルの呪文", maxLevel: 2 }
+      ],
+      dark_spells: [
+        { name: "ポイズンの呪文", maxLevel: 5 },
+        { name: "アースクエイクの呪文", maxLevel: 5 },
+        { name: "ヘイストの呪文", maxLevel: 5 },
+        { name: "スケルトンの呪文", maxLevel: 4 },
+        { name: "コウモリの呪文", maxLevel: 4 }
       ]
     }
   },
@@ -678,7 +702,7 @@ export const TH_DATA = [
         { name: "アイスゴーレム", maxLevel: 5 },
         { name: "ストライカー", maxLevel: 2 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 9 },
         { name: "ヒールの呪文", maxLevel: 7 },
         { name: "レイジの呪文", maxLevel: 6 },
@@ -686,6 +710,20 @@ export const TH_DATA = [
         { name: "フリーズの呪文", maxLevel: 7 },
         { name: "クローンの呪文", maxLevel: 5 },
         { name: "インビジブルの呪文", maxLevel: 3 }
+      ],
+      dark_spells: [
+        { name: "ポイズンの呪文", maxLevel: 6 },
+        { name: "アースクエイクの呪文", maxLevel: 5 },
+        { name: "ヘイストの呪文", maxLevel: 5 },
+        { name: "スケルトンの呪文", maxLevel: 6 },
+        { name: "コウモリの呪文", maxLevel: 5 },
+        { name: "オーバーグロウの呪文", maxLevel: 2 }
+      ],
+      workshops: [
+        { name: "ウォールバスター", maxLevel: 3 },
+        { name: "突撃艦", maxLevel: 3 },
+        { name: "ロックボマー", maxLevel: 3 },
+        { name: "ウッドランチャー", maxLevel: 3 }
       ]
     }
   },
@@ -774,7 +812,7 @@ export const TH_DATA = [
         { name: "ストライカー", maxLevel: 3 },
         { name: "見習いウォーデン", maxLevel: 2 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 9 },
         { name: "ヒールの呪文", maxLevel: 8 },
         { name: "レイジの呪文", maxLevel: 6 },
@@ -783,6 +821,21 @@ export const TH_DATA = [
         { name: "クローンの呪文", maxLevel: 6 },
         { name: "インビジブルの呪文", maxLevel: 4 },
         { name: "リターンの呪文", maxLevel: 2 }
+      ],
+      dark_spells: [
+        { name: "ポイズンの呪文", maxLevel: 7 },
+        { name: "アースクエイクの呪文", maxLevel: 5 },
+        { name: "ヘイストの呪文", maxLevel: 5 },
+        { name: "スケルトンの呪文", maxLevel: 7 },
+        { name: "コウモリの呪文", maxLevel: 5 },
+        { name: "オーバーグロウの呪文", maxLevel: 2 }
+      ],
+      workshops: [
+        { name: "ウォールバスター", maxLevel: 4 },
+        { name: "突撃艦", maxLevel: 4 },
+        { name: "ロックボマー", maxLevel: 4 },
+        { name: "投下兵舎", maxLevel: 4 },
+        { name: "ウッドランチャー", maxLevel: 4 }
       ]
     }
   },
@@ -875,7 +928,7 @@ export const TH_DATA = [
         { name: "見習いウォーデン", maxLevel: 3 },
         { name: "ドルイド", maxLevel: 2 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 9 },
         { name: "ヒールの呪文", maxLevel: 8 },
         { name: "レイジの呪文", maxLevel: 6 },
@@ -884,6 +937,28 @@ export const TH_DATA = [
         { name: "クローンの呪文", maxLevel: 7 },
         { name: "インビジブルの呪文", maxLevel: 4 },
         { name: "リターンの呪文", maxLevel: 3 }
+      ],
+      dark_spells: [
+        { name: "ポイズンの呪文", maxLevel: 8 },
+        { name: "アースクエイクの呪文", maxLevel: 5 },
+        { name: "ヘイストの呪文", maxLevel: 5 },
+        { name: "スケルトンの呪文", maxLevel: 7 },
+        { name: "コウモリの呪文", maxLevel: 5 },
+        { name: "オーバーグロウの呪文", maxLevel: 3 }
+      ],
+      workshops: [
+        { name: "ウォールバスター", maxLevel: 4 },
+        { name: "突撃艦", maxLevel: 4 },
+        { name: "ロックボマー", maxLevel: 4 },
+        { name: "投下兵舎", maxLevel: 4 },
+        { name: "ウッドランチャー", maxLevel: 4 },
+        { name: "フレイムシューター", maxLevel: 4 }
+      ],
+      pets: [
+        { name: "L.A.S.S.I", maxLevel: 10 },
+        { name: "エレクトロオウル", maxLevel: 10 },
+        { name: "ヤク", maxLevel: 10 },
+        { name: "ユニコーン", maxLevel: 10 }
       ]
     }
   },
@@ -980,7 +1055,7 @@ export const TH_DATA = [
         { name: "ドルイド", maxLevel: 3 },
         { name: "オーブン", maxLevel: 2 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 10 },
         { name: "ヒールの呪文", maxLevel: 9 },
         { name: "レイジの呪文", maxLevel: 6 },
@@ -990,6 +1065,33 @@ export const TH_DATA = [
         { name: "インビジブルの呪文", maxLevel: 4 },
         { name: "リターンの呪文", maxLevel: 4 },
         { name: "リバイブの呪文", maxLevel: 2 }
+      ],
+      dark_spells: [
+        { name: "ポイズンの呪文", maxLevel: 9 },
+        { name: "アースクエイクの呪文", maxLevel: 5 },
+        { name: "ヘイストの呪文", maxLevel: 5 },
+        { name: "スケルトンの呪文", maxLevel: 8 },
+        { name: "コウモリの呪文", maxLevel: 6 },
+        { name: "オーバーグロウの呪文", maxLevel: 3 }
+      ],
+      workshops: [
+        { name: "ウォールバスター", maxLevel: 5 },
+        { name: "突撃艦", maxLevel: 4 },
+        { name: "ロックボマー", maxLevel: 5 },
+        { name: "投下兵舎", maxLevel: 4 },
+        { name: "ウッドランチャー", maxLevel: 4 },
+        { name: "フレイムシューター", maxLevel: 4 },
+        { name: "バトルドリル", maxLevel: 4 }
+      ],
+      pets: [
+        { name: "L.A.S.S.I", maxLevel: 15 },
+        { name: "エレクトロオウル", maxLevel: 10 },
+        { name: "ヤク", maxLevel: 10 },
+        { name: "ユニコーン", maxLevel: 10 },
+        { name: "フロスティ", maxLevel: 10 },
+        { name: "ディギー", maxLevel: 10 },
+        { name: "ポイズンリザード", maxLevel: 10 },
+        { name: "フェニックス", maxLevel: 10 }
       ]
     }
   },
@@ -1088,7 +1190,7 @@ export const TH_DATA = [
         { name: "ドルイド", maxLevel: 4 },
         { name: "オーブン", maxLevel: 3 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 11 },
         { name: "ヒールの呪文", maxLevel: 10 },
         { name: "レイジの呪文", maxLevel: 6 },
@@ -1098,6 +1200,36 @@ export const TH_DATA = [
         { name: "インビジブルの呪文", maxLevel: 4 },
         { name: "リターンの呪文", maxLevel: 5 },
         { name: "リバイブの呪文", maxLevel: 3 }
+      ],
+      dark_spells: [
+        { name: "ポイズンの呪文", maxLevel: 10 },
+        { name: "アースクエイクの呪文", maxLevel: 5 },
+        { name: "ヘイストの呪文", maxLevel: 5 },
+        { name: "スケルトンの呪文", maxLevel: 8 },
+        { name: "コウモリの呪文", maxLevel: 6 },
+        { name: "オーバーグロウの呪文", maxLevel: 4 }
+      ],
+      workshops: [
+        { name: "ウォールバスター", maxLevel: 5 },
+        { name: "突撃艦", maxLevel: 4 },
+        { name: "ロックボマー", maxLevel: 5 },
+        { name: "投下兵舎", maxLevel: 5 },
+        { name: "ウッドランチャー", maxLevel: 5 },
+        { name: "フレイムシューター", maxLevel: 5 },
+        { name: "バトルドリル", maxLevel: 4 },
+        { name: "ユニットランチャー", maxLevel: 3 }
+      ],
+      pets: [
+        { name: "L.A.S.S.I", maxLevel: 15 },
+        { name: "エレクトロオウル", maxLevel: 10 },
+        { name: "ヤク", maxLevel: 10 },
+        { name: "ユニコーン", maxLevel: 10 },
+        { name: "フロスティ", maxLevel: 10 },
+        { name: "ディギー", maxLevel: 10 },
+        { name: "ポイズンリザード", maxLevel: 10 },
+        { name: "フェニックス", maxLevel: 10 },
+        { name: "スピリットフォックス", maxLevel: 10 },
+        { name: "アングリージェリー", maxLevel: 10 }
       ]
     }
   },
@@ -1199,7 +1331,7 @@ export const TH_DATA = [
         { name: "ドルイド", maxLevel: 4 },
         { name: "オーブン", maxLevel: 4 }
       ],
-      spell: [
+      spells: [
         { name: "ライトニングの呪文", maxLevel: 12 },
         { name: "ヒールの呪文", maxLevel: 11 },
         { name: "レイジの呪文", maxLevel: 6 },
@@ -1209,6 +1341,37 @@ export const TH_DATA = [
         { name: "インビジブルの呪文", maxLevel: 4 },
         { name: "リターンの呪文", maxLevel: 6 },
         { name: "リバイブの呪文", maxLevel: 4 }
+      ],
+      dark_spells: [
+        { name: "ポイズンの呪文", maxLevel: 11 },
+        { name: "アースクエイクの呪文", maxLevel: 5 },
+        { name: "ヘイストの呪文", maxLevel: 6 },
+        { name: "スケルトンの呪文", maxLevel: 8 },
+        { name: "コウモリの呪文", maxLevel: 7 },
+        { name: "オーバーグロウの呪文", maxLevel: 4 }
+      ],
+      workshops: [
+        { name: "ウォールバスター", maxLevel: 5 },
+        { name: "突撃艦", maxLevel: 4 },
+        { name: "ロックボマー", maxLevel: 5 },
+        { name: "投下兵舎", maxLevel: 5 },
+        { name: "ウッドランチャー", maxLevel: 5 },
+        { name: "フレイムシューター", maxLevel: 5 },
+        { name: "バトルドリル", maxLevel: 5 },
+        { name: "ユニットランチャー", maxLevel: 4 }
+      ],
+      pets: [
+        { name: "L.A.S.S.I", maxLevel: 15 },
+        { name: "エレクトロオウル", maxLevel: 10 },
+        { name: "ヤク", maxLevel: 10 },
+        { name: "ユニコーン", maxLevel: 10 },
+        { name: "フロスティ", maxLevel: 10 },
+        { name: "ディギー", maxLevel: 10 },
+        { name: "ポイズンリザード", maxLevel: 10 },
+        { name: "フェニックス", maxLevel: 10 },
+        { name: "スピリットフォックス", maxLevel: 10 },
+        { name: "アングリージェリー", maxLevel: 10 },
+        { name: "スニージー", maxLevel: 10 },
       ]
     }
   }
