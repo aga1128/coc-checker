@@ -1,7 +1,7 @@
 import React from 'react';
 import { Dialog, DialogPanel, DialogTitle, DialogBackdrop } from '@headlessui/react';
-import Button from '../../components/elements/Button'
-import Icon from '../../components/elements/Icon'
+import Button from '../../components/elements/Button';
+import Icon from '../../components/elements/Icon';
 
 type Props = {
   isOpen: boolean;
@@ -18,7 +18,6 @@ const Modal = ({ isOpen, setter, title, children }: Props) => {
         open={isOpen}
         as="div"
         onClose={() => setter(false)}
-        transition
         className="relative z-50 transition duration-200 data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
       >
         <DialogBackdrop className="fixed inset-0 bg-black/30" />
